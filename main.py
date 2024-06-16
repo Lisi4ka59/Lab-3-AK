@@ -62,19 +62,14 @@ def t_error(t):
     t.lexer.skip(1)
 
 
-# Build the lexer
-
-
 lexer = lex.lex()
 
-# dictionary of names
 names = {}
 
 
 def p_program(p):
     """program : statements END"""
     p[0] = ('program', p[1])
-    print("done program")
 
 
 def p_statements_multiple(p):
@@ -83,13 +78,11 @@ def p_statements_multiple(p):
         p[0] = ('statements', p[2])
     else:
         p[0] = ('statements', p[1], p[2])
-    print("done statements")
 
 
 def p_statements_simple(p):
     """statements : """
     pass
-    print("done statements")
 
 
 def p_statement(p):
@@ -99,7 +92,6 @@ def p_statement(p):
     | input
     | output"""
     p[0] = ('statement', p[1])
-    print("done statement")
 
 
 def p_operation(p):
@@ -126,7 +118,6 @@ def p_assignment(p):
     | NAME EQUALS STR
     | NAME EQUALS CHAR"""
     p[0] = ('assignment', p[1], p[3])
-    print("done assignment")
 
 
 def p_while(p):
@@ -186,8 +177,6 @@ label_array = []
 
 
 def t_assignment(assignment):
-    print("translate assignment")
-    print(assignment)
     global memory_format, memory, variables, instruction_pointer, variable_pointer
     if isinstance(assignment[2], tuple):
         if assignment[2][0] == "operation":
@@ -270,7 +259,6 @@ def t_assignment(assignment):
 
 
 def t_condition(condition_statement):
-    print(condition_statement)
     global memory_format, memory, variables, instruction_pointer, variable_pointer, label_array
     if type(condition_statement[1][3]) is int:
         memory[instruction_pointer] = 20
@@ -290,34 +278,28 @@ def t_condition(condition_statement):
     else:
         raise SyntaxError("Unexpected variable type at '%s'" % condition_statement[1][2])
     instruction_pointer += command_format
-
-    if condition_statement[1][1][1] == '>':
-        memory[instruction_pointer] = 11
-        current_label = instruction_pointer + 1
-    elif condition_statement[1][1][1] == '<':
-        memory[instruction_pointer] = 12
-        current_label = instruction_pointer + 1
-    elif condition_statement[1][1][1] == '==':
-        memory[instruction_pointer] = 13
-        current_label = instruction_pointer + 1
-    elif condition_statement[1][1][1] == '!=':
-        memory[instruction_pointer] = 14
-        current_label = instruction_pointer + 1
-    elif condition_statement[1][1][1] == '>=':
-        memory[instruction_pointer] = 15
-        current_label = instruction_pointer + 1
-    elif condition_statement[1][1][1] == '<=':
-        memory[instruction_pointer] = 16
-        current_label = instruction_pointer + 1
-    else:
-        raise SyntaxError("Unexpected condition statement at '%s'" % condition_statement[1])
+    match condition_statement[1][1][1]:
+        case '>':
+            memory[instruction_pointer] = 11
+        case '<':
+            memory[instruction_pointer] = 12
+        case '==':
+            memory[instruction_pointer] = 13
+        case '!=':
+            memory[instruction_pointer] = 14
+        case '>=':
+            memory[instruction_pointer] = 15
+        case '<=':
+            memory[instruction_pointer] = 16
+        case _:
+            raise SyntaxError("Unexpected condition statement at '%s'" % condition_statement[1])
+    current_label = instruction_pointer + 1
     instruction_pointer += command_format
     t_statements(condition_statement[2])
     return current_label
 
 
 def t_while(while_statement):
-    print(while_statement)
     global memory_format, memory, variables, instruction_pointer, variable_pointer, label_array
     return_address = instruction_pointer
     current_label = t_condition(while_statement)
@@ -328,14 +310,12 @@ def t_while(while_statement):
 
 
 def t_if(if_statement):
-    print(if_statement)
     global memory_format, memory, variables, instruction_pointer, variable_pointer, label_array
     current_label = t_condition(if_statement)
     memory[current_label] = instruction_pointer
 
 
 def t_input(input_statement):
-    print(input_statement)
     global memory_format, memory, variables, instruction_pointer, variable_pointer, label_array
     if input_statement[2] == "InputC":
         memory[instruction_pointer] = 31
@@ -407,8 +387,6 @@ def t_input(input_statement):
 
 
 def t_output(output_statement):
-    print(output_statement)
-
     global memory_format, memory, variables, instruction_pointer, variable_pointer, label_array
     memory[instruction_pointer] = 1
     if not output_statement[1] in variables:
@@ -476,8 +454,6 @@ def t_output(output_statement):
 
 
 def t_statement(statement):
-    print("translate statement")
-    print(statement)
     match statement[1][0]:
         case "assignment":
             t_assignment(statement[1])
@@ -492,8 +468,6 @@ def t_statement(statement):
 
 
 def t_statements(statements):
-    print("translate statements")
-    print(str(statements) + "?")
     if statements[1][0] == "statements":
         t_statements(statements[1])
         t_statement(statements[2])
@@ -502,48 +476,18 @@ def t_statements(statements):
 
 
 def t_program(program):
-    print("translate program")
     t_statements(program[1])
 
 
 s = ""
 while True:
-    s += input('calc > ') + "\n"
+    s += input('> ') + "\n"
     if "};" in s:
         break
 
 p = parser.parse(s)
-print(p)
 t_program(p)
 
 with open("program.o", 'wb') as f:
     for i in range(len(memory)):
         f.write((memory[i]).to_bytes(4, 'big'))
-
-print(len(memory))
-print(memory[0:50])
-
-# a=1
-# b=1
-# prom=0
-# While(a<4000000){
-# mod=a%2
-# If(mod==0){
-#     prom=prom+a
-# }
-# c=a+b
-# b=a
-# a=c
-# }
-# PrintI(prom)
-# };
-
-
-# question="What is your name?"
-# Print(question)
-# Input(answer)
-# prompt="Hello, "
-# Print(prompt)
-# Print(answer)
-# mark="!"
-# Print(mark)};
