@@ -149,7 +149,7 @@ with open("log.txt", "w") as log:
                         if input_symbol:
                             memory[stack_pointer] = int(input_symbol)
                         else:
-                            log.write(f"Program terminated because of end of input\n")
+                            log.write("Program terminated because of end of input\n")
                             break
                         stack_pointer += 1
 
@@ -161,7 +161,7 @@ with open("log.txt", "w") as log:
                             input_symbol = ord(input_symbol)
                             memory[stack_pointer] = input_symbol
                         else:
-                            log.write(f"Program terminated because of end of input\n")
+                            log.write("Program terminated because of end of input\n")
                             break
                         stack_pointer += 1
 
