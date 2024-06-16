@@ -49,6 +49,7 @@ jobs:
         echo -e "Alice\nergbhjnhkwlkd" > input.txt
         python main.py < tests/Cat/Cat_test
         python machine.py
+        cat log.txt > log
         pytest tests/Cat/test_cat.py::test_input_log
 
         echo -e "Alice\n" > input.txt
