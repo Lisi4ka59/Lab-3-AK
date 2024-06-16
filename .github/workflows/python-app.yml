@@ -46,10 +46,9 @@ jobs:
         python machine.py
         pytest tests/Cat/test_cat.py::test_random_input
         
-        echo -e "Alice\nergbhjnhkwlkd" > input.txt
+        echo -e "fshbdkjkf;navl kjsfrbilVAHBHDLFADNVJDIGBLUIEVJCvnfs43875t45yrgi" > input.txt
         python main.py < tests/Cat/Cat_test
         python machine.py
-        cat log.txt > log
         pytest tests/Cat/test_cat.py::test_input_log
 
         echo -e "Alice\n" > input.txt
