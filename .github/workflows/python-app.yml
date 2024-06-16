@@ -36,19 +36,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test 
       run: |
-        cat > input_test.txt 
-        a=1
-        b=1
-        prom=0
-        While(a<4000000){
-          mod=a%2
-          If(mod==0){
-            prom=prom+a
-          }
-          c=a+b
-          b=a
-          a=c
-        }
-        PrintI(prom)
-        };
-        Ctrl-d
+        python machine.py
