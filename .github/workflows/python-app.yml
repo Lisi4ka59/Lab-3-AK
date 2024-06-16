@@ -41,7 +41,8 @@ jobs:
         python machine.py
         pytest tests/Hello/test_hello.py
 
-        head -c $(shuf -i 1-10000 -n 1) /dev/urandom | tr -dc '[:print:]' > input.txt
+        # head -c $(shuf -i 1-10000 -n 1) /dev/urandom | tr -dc '[:print:]' > input.txt
+        echo -e "Alice\nergbhjnhkwlkd" > input.txt
         python main.py < tests/Cat/Cat_test
         python machine.py
         pytest tests/Cat/test_cat.py
