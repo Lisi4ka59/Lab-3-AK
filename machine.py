@@ -177,7 +177,7 @@ with open("log.txt", "w") as log:
 
                         input_symbol = inp.read(1)
                         log.write(f"{instr_pointer} - {memory[instr_pointer]} - inp \
-                        {input_symbol.replace(os.linesep, """new line""").replace("\t", """tab""")} -> \
+                        {input_symbol.replace(os.linesep, "new line").replace("\t", "tab")} -> \
                         #stack({stack_pointer - stack_head})\n")
                         if input_symbol:
                             input_symbol = ord(input_symbol)
