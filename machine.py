@@ -1,5 +1,3 @@
-import os
-
 command_format = 3
 memory_format = 1024
 stack_head: int = memory_format
@@ -19,7 +17,6 @@ with open("log.txt", "w") as log:
                 match memory[instr_pointer]:
                     case 0:  # Останов
                         log.write(f"{instr_pointer} - {memory[instr_pointer]} - hlt\n")
-                        print(memory[510:520])
                         break
 
                     case 1:  # Берет из памяти, записывает на вершину стека
@@ -27,8 +24,6 @@ with open("log.txt", "w") as log:
                             f"{instr_pointer} - {memory[instr_pointer]} - push {memory[memory[instr_pointer + 1]]} -> \
                             #stack({stack_pointer - stack_head})\n")
                         memory[stack_pointer] = memory[memory[instr_pointer + 1]]
-                        print(memory[1024:1030], end="@")
-                        print(memory[0:17])
                         stack_pointer += 1
 
                     case 2:  # Берет из стека, записывает в память по адресу
@@ -39,9 +34,6 @@ with open("log.txt", "w") as log:
                         memory[memory[instr_pointer + 1]] = memory[stack_pointer]
                         memory[stack_pointer] = 0
 
-                        print(memory[1024:1030], end="@")
-                        print(memory[0:17])
-
                     case 3:  # Складывает два верхних значения в стеке
                         stack_pointer -= 1
                         log.write(
@@ -49,8 +41,6 @@ with open("log.txt", "w") as log:
                             {memory[stack_pointer - 1]} -> #stack({stack_pointer - 1 - stack_head})\n")
                         memory[stack_pointer - 1] = memory[stack_pointer] + memory[stack_pointer - 1]
                         memory[stack_pointer] = 0
-                        print(memory[1024:1030], end="@")
-                        print(memory[0:17])
 
                     case 4:  # Вычитает из верхнего значения стека следующее значение стека
                         stack_pointer -= 1
@@ -59,8 +49,6 @@ with open("log.txt", "w") as log:
                             {memory[stack_pointer - 1]} -> #stack({stack_pointer - 1 - stack_head})\n")
                         memory[stack_pointer - 1] = memory[stack_pointer] - memory[stack_pointer - 1]
                         memory[stack_pointer] = 0
-                        print(memory[1024:1030], end="@")
-                        print(memory[0:17])
 
                     case 5:  # Умножает верхнее значение стека и следующее значение стека
                         stack_pointer -= 1
@@ -69,8 +57,6 @@ with open("log.txt", "w") as log:
                             {memory[stack_pointer - 1]} -> #stack({stack_pointer - 1 - stack_head})\n")
                         memory[stack_pointer - 1] = memory[stack_pointer] * memory[stack_pointer - 1]
                         memory[stack_pointer] = 0
-                        print(memory[1024:1030], end="@")
-                        print(memory[0:17])
 
                     case 6:  # Производит целочисленное деление верхнего значения стека на следующее значение стека
                         stack_pointer -= 1
@@ -79,8 +65,6 @@ with open("log.txt", "w") as log:
                             {memory[stack_pointer - 1]} -> #stack({stack_pointer - 1 - stack_head})\n")
                         memory[stack_pointer - 1] = memory[stack_pointer] // memory[stack_pointer - 1]
                         memory[stack_pointer] = 0
-                        print(memory[1024:1030], end="@")
-                        print(memory[0:17])
 
                     case 7:  # Находит остаток от деления значения на вершине стека и следующего значения стека
                         stack_pointer -= 1
@@ -89,8 +73,6 @@ with open("log.txt", "w") as log:
                             {memory[stack_pointer - 1]} -> #stack({stack_pointer - 1 - stack_head})\n")
                         memory[stack_pointer - 1] = memory[stack_pointer] % memory[stack_pointer - 1]
                         memory[stack_pointer] = 0
-                        print(memory[1024:1030], end="@")
-                        print(memory[0:17])
 
                     case 10:  # Безусловный переход
                         log.write(
@@ -151,8 +133,6 @@ with open("log.txt", "w") as log:
                             f"{instr_pointer} - {memory[instr_pointer]} - pushown {memory[instr_pointer + 1]} \
                             -> #stack({stack_pointer - stack_head})\n")
                         memory[stack_pointer] = memory[instr_pointer + 1]
-                        print(memory[1024:1030], end="@")
-                        print(memory[0:17])
                         stack_pointer += 1
 
                     case 21:  # Удаляет вершину стека
@@ -174,7 +154,6 @@ with open("log.txt", "w") as log:
                         stack_pointer += 1
 
                     case 31:  # Читает символ ввода, записывает на вершину стека
-
                         input_symbol = inp.read(1)
                         log.write(f"{instr_pointer} - {memory[instr_pointer]} - inp \
                         {input_symbol} -> #stack({stack_pointer - stack_head})\n")
