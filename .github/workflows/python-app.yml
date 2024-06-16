@@ -43,6 +43,6 @@ jobs:
         
         python main.py < tests/Fibonnachi/Fibonnachi_test
         python machine.py
-        pytest tests/Fibbonachi/test_fibonnachi.py
+        pytest tests/Fibonnachi/test_fibonnachi.py
 
         
