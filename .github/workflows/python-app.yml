@@ -40,6 +40,16 @@ jobs:
         python main.py < tests/Hello/Hello_test
         python machine.py
         pytest tests/Hello/test_hello.py
+
+        head -c $(shuf -i 1-10000 -n 1) /dev/urandom | tr -dc '[:print:]' > input.txt
+        python main.py < tests/Cat/Cat_test
+        python machine.py
+        pytest tests/Cat/test_cat.py
+
+        echo -e "Alice\n" > input.txt
+        python main.py < tests/Hello_user_name/Hello_user_name_test
+        python machine.py
+        pytest tests/Hello_user_name/test_hello_user_name.py
         
         python main.py < tests/Fibonnachi/Fibonnachi_test
         python machine.py
