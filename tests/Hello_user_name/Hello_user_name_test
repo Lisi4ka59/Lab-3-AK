@@ -1,0 +1,8 @@
+question="What is your name?"
+Print(question)
+Input(answer)
+prompt="Hello, "
+Print(prompt)
+Print(answer)
+mark="!"
+Print(mark)};
