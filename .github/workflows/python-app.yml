@@ -38,5 +38,7 @@ jobs:
       run: |
         python main.py < tests/Fibonnachi/Fibonnachi_test
         python machine.py
+        python main.py < tests/Hello/Hello_test
+        python machine.py
         pytest
         
