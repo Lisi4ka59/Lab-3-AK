@@ -295,6 +295,10 @@ def t_condition(condition_statement):
             raise SyntaxError("Unexpected condition statement at '%s'" % condition_statement[1])
     current_label = instruction_pointer + 1
     instruction_pointer += command_format
+    memory[instruction_pointer] = 21
+    instruction_pointer += command_format
+    memory[instruction_pointer] = 21
+    instruction_pointer += command_format
     t_statements(condition_statement[2])
     return current_label
 
