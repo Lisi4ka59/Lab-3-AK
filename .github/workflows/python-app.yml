@@ -34,6 +34,21 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test with pytest
+    - name: Test 
       run: |
-        pytest
+        cat > input_test.txt 
+        a=1
+        b=1
+        prom=0
+        While(a<4000000){
+          mod=a%2
+          If(mod==0){
+            prom=prom+a
+          }
+          c=a+b
+          b=a
+          a=c
+        }
+        PrintI(prom)
+        };
+        Ctrl-d
