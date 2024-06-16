@@ -36,7 +36,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=500 --statistics
     - name: Test 
       run: |
-        python main.py < tests/Fibonnachi_test
+        python main.py < tests/Fibonnachi/Fibonnachi_test
         python machine.py
         pytest
         
