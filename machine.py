@@ -182,4 +182,3 @@ with open("log.txt", "w") as log:
                         stack_pointer -= 1
 
                 instr_pointer += command_format
-                
