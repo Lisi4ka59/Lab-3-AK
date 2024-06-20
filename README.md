@@ -987,10 +987,13 @@ PrintI(prom)
 4613732
 ```
 
+### Аналитика
 
-
-
-
-
-
-
+```
+|           Full name          | alg             | loc | bytes   | instr | exec_instr | tick |                                       variant                                     |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Начинкин Михаил Анатольевич  | prob2           | 14  | 864     | 36    | 750        | -    |  alg | stack | neum | hw | instr | binary | stream | port | pstr | prob2 | cache  |
+| Начинкин Михаил Анатольевич  | cat             | 4   | 648     | 27    | 636        | -    |  alg | stack | neum | hw | instr | binary | stream | port | pstr | prob2 | cache  |
+| Начинкин Михаил Анатольевич  | hello           | 2   | 1080    | 45    | 200        | -    |  alg | stack | neum | hw | instr | binary | stream | port | pstr | prob2 | cache  |
+| Начинкин Михаил Анатольевич  | hello_user_name | 8   | 3480    | 145   | 578        | -    |  alg | stack | neum | hw | instr | binary | stream | port | pstr | prob2 | cache  |
+```
