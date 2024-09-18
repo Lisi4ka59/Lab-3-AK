@@ -176,10 +176,10 @@
 ## Модель процессора
 
 ### Datapath
-![image](https://github.com/Lisi4ka59/Lab-3-AK/assets/122356446/af28bc90-594c-4e8e-9915-d305d4cc21c0)
+![image](https://github.com/user-attachments/assets/4c373ad4-9f44-454a-9786-9eb503bed9a8)
 
 ### Control Unit
-![image](https://github.com/Lisi4ka59/Lab-3-AK/assets/122356446/22440f2f-90fd-47e4-9af2-665cbf90f59e)
+![image](https://github.com/user-attachments/assets/7c8a2f67-00a6-43c1-930b-7525715ef9a4)
 
 
 ## Тестирование
