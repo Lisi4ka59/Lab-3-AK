@@ -1,578 +1,578 @@
-0 - 20 - pushown 63                             -> #stack(0)
-3 - 20 - pushown 101                             -> #stack(1)
-6 - 20 - pushown 109                             -> #stack(2)
-9 - 20 - pushown 97                             -> #stack(3)
-12 - 20 - pushown 110                             -> #stack(4)
-15 - 20 - pushown 32                             -> #stack(5)
-18 - 20 - pushown 114                             -> #stack(6)
-21 - 20 - pushown 117                             -> #stack(7)
-24 - 20 - pushown 111                             -> #stack(8)
-27 - 20 - pushown 121                             -> #stack(9)
-30 - 20 - pushown 32                             -> #stack(10)
-33 - 20 - pushown 115                             -> #stack(11)
-36 - 20 - pushown 105                             -> #stack(12)
-39 - 20 - pushown 32                             -> #stack(13)
-42 - 20 - pushown 116                             -> #stack(14)
-45 - 20 - pushown 97                             -> #stack(15)
-48 - 20 - pushown 104                             -> #stack(16)
-51 - 20 - pushown 87                             -> #stack(17)
-54 - 20 - pushown 18                             -> #stack(18)
-57 - 2 - pull 18 ->                             #512
-60 - 2 - pull 87 ->                             #513
-63 - 2 - pull 104 ->                             #514
-66 - 2 - pull 97 ->                             #515
-69 - 2 - pull 116 ->                             #516
-72 - 2 - pull 32 ->                             #517
-75 - 2 - pull 105 ->                             #518
-78 - 2 - pull 115 ->                             #519
-81 - 2 - pull 32 ->                             #520
-84 - 2 - pull 121 ->                             #521
-87 - 2 - pull 111 ->                             #522
-90 - 2 - pull 117 ->                             #523
-93 - 2 - pull 114 ->                             #524
-96 - 2 - pull 32 ->                             #525
-99 - 2 - pull 110 ->                             #526
-102 - 2 - pull 97 ->                             #527
-105 - 2 - pull 109 ->                             #528
-108 - 2 - pull 101 ->                             #529
-111 - 2 - pull 63 ->                             #530
-114 - 1 - push 18 ->                             #stack(0)
-117 - 20 - pushown 1                             -> #stack(1)
-120 - 16 - ifle not 1                             <= 18 -> #ip(162)
-123 - 2 - pull 1 ->                             #512
-126 - 1 - push 1 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             1 -> #stack(1)
-135 - 2 - pull 513 ->                             #139
-138 - 1 - push 87 ->                             #stack(1)
-141 - 32 - out W                             -> #stack(2)
-144 - 1 - push 1 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             1 -> #stack(1)
-153 - 2 - pull 2 ->                             #512
-156 - 1 - push 2 ->                             #stack(1)
+0 - 20 - pushown 63 -> #stack(0)
+3 - 20 - pushown 101 -> #stack(1)
+6 - 20 - pushown 109 -> #stack(2)
+9 - 20 - pushown 97 -> #stack(3)
+12 - 20 - pushown 110 -> #stack(4)
+15 - 20 - pushown 32 -> #stack(5)
+18 - 20 - pushown 114 -> #stack(6)
+21 - 20 - pushown 117 -> #stack(7)
+24 - 20 - pushown 111 -> #stack(8)
+27 - 20 - pushown 121 -> #stack(9)
+30 - 20 - pushown 32 -> #stack(10)
+33 - 20 - pushown 115 -> #stack(11)
+36 - 20 - pushown 105 -> #stack(12)
+39 - 20 - pushown 32 -> #stack(13)
+42 - 20 - pushown 116 -> #stack(14)
+45 - 20 - pushown 97 -> #stack(15)
+48 - 20 - pushown 104 -> #stack(16)
+51 - 20 - pushown 87 -> #stack(17)
+54 - 20 - pushown 18 -> #stack(18)
+57 - 2 - pull 18 -> #512
+60 - 2 - pull 87 -> #513
+63 - 2 - pull 104 -> #514
+66 - 2 - pull 97 -> #515
+69 - 2 - pull 116 -> #516
+72 - 2 - pull 32 -> #517
+75 - 2 - pull 105 -> #518
+78 - 2 - pull 115 -> #519
+81 - 2 - pull 32 -> #520
+84 - 2 - pull 121 -> #521
+87 - 2 - pull 111 -> #522
+90 - 2 - pull 117 -> #523
+93 - 2 - pull 114 -> #524
+96 - 2 - pull 32 -> #525
+99 - 2 - pull 110 -> #526
+102 - 2 - pull 97 -> #527
+105 - 2 - pull 109 -> #528
+108 - 2 - pull 101 -> #529
+111 - 2 - pull 63 -> #530
+114 - 1 - push 18 -> #stack(0)
+117 - 20 - pushown 1 -> #stack(1)
+120 - 16 - ifle not 1 <= 18 -> #ip(162)
+123 - 2 - pull 1 -> #512
+126 - 1 - push 1 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 1
+135 - 2 - pull 513 -> #139
+138 - 1 - push 87 -> #stack(1)
+141 - 32 - out W
+144 - 1 - push 1 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 1
+153 - 2 - pull 2 -> #512
+156 - 1 - push 2 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 2                             <= 18 -> #ip(162)
-123 - 2 - pull 2 ->                             #512
-126 - 1 - push 2 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             2 -> #stack(1)
-135 - 2 - pull 514 ->                             #139
-138 - 1 - push 104 ->                             #stack(1)
-141 - 32 - out h                             -> #stack(2)
-144 - 1 - push 2 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             2 -> #stack(1)
-153 - 2 - pull 3 ->                             #512
-156 - 1 - push 3 ->                             #stack(1)
+120 - 16 - ifle not 2 <= 18 -> #ip(162)
+123 - 2 - pull 2 -> #512
+126 - 1 - push 2 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 2
+135 - 2 - pull 514 -> #139
+138 - 1 - push 104 -> #stack(1)
+141 - 32 - out h
+144 - 1 - push 2 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 2
+153 - 2 - pull 3 -> #512
+156 - 1 - push 3 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 3                             <= 18 -> #ip(162)
-123 - 2 - pull 3 ->                             #512
-126 - 1 - push 3 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             3 -> #stack(1)
-135 - 2 - pull 515 ->                             #139
-138 - 1 - push 97 ->                             #stack(1)
-141 - 32 - out a                             -> #stack(2)
-144 - 1 - push 3 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             3 -> #stack(1)
-153 - 2 - pull 4 ->                             #512
-156 - 1 - push 4 ->                             #stack(1)
+120 - 16 - ifle not 3 <= 18 -> #ip(162)
+123 - 2 - pull 3 -> #512
+126 - 1 - push 3 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 3
+135 - 2 - pull 515 -> #139
+138 - 1 - push 97 -> #stack(1)
+141 - 32 - out a
+144 - 1 - push 3 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 3
+153 - 2 - pull 4 -> #512
+156 - 1 - push 4 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 4                             <= 18 -> #ip(162)
-123 - 2 - pull 4 ->                             #512
-126 - 1 - push 4 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             4 -> #stack(1)
-135 - 2 - pull 516 ->                             #139
-138 - 1 - push 116 ->                             #stack(1)
-141 - 32 - out t                             -> #stack(2)
-144 - 1 - push 4 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             4 -> #stack(1)
-153 - 2 - pull 5 ->                             #512
-156 - 1 - push 5 ->                             #stack(1)
+120 - 16 - ifle not 4 <= 18 -> #ip(162)
+123 - 2 - pull 4 -> #512
+126 - 1 - push 4 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 4
+135 - 2 - pull 516 -> #139
+138 - 1 - push 116 -> #stack(1)
+141 - 32 - out t
+144 - 1 - push 4 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 4
+153 - 2 - pull 5 -> #512
+156 - 1 - push 5 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 5                             <= 18 -> #ip(162)
-123 - 2 - pull 5 ->                             #512
-126 - 1 - push 5 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             5 -> #stack(1)
-135 - 2 - pull 517 ->                             #139
-138 - 1 - push 32 ->                             #stack(1)
-141 - 32 - out                               -> #stack(2)
-144 - 1 - push 5 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             5 -> #stack(1)
-153 - 2 - pull 6 ->                             #512
-156 - 1 - push 6 ->                             #stack(1)
+120 - 16 - ifle not 5 <= 18 -> #ip(162)
+123 - 2 - pull 5 -> #512
+126 - 1 - push 5 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 5
+135 - 2 - pull 517 -> #139
+138 - 1 - push 32 -> #stack(1)
+141 - 32 - out  
+144 - 1 - push 5 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 5
+153 - 2 - pull 6 -> #512
+156 - 1 - push 6 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 6                             <= 18 -> #ip(162)
-123 - 2 - pull 6 ->                             #512
-126 - 1 - push 6 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             6 -> #stack(1)
-135 - 2 - pull 518 ->                             #139
-138 - 1 - push 105 ->                             #stack(1)
-141 - 32 - out i                             -> #stack(2)
-144 - 1 - push 6 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             6 -> #stack(1)
-153 - 2 - pull 7 ->                             #512
-156 - 1 - push 7 ->                             #stack(1)
+120 - 16 - ifle not 6 <= 18 -> #ip(162)
+123 - 2 - pull 6 -> #512
+126 - 1 - push 6 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 6
+135 - 2 - pull 518 -> #139
+138 - 1 - push 105 -> #stack(1)
+141 - 32 - out i
+144 - 1 - push 6 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 6
+153 - 2 - pull 7 -> #512
+156 - 1 - push 7 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 7                             <= 18 -> #ip(162)
-123 - 2 - pull 7 ->                             #512
-126 - 1 - push 7 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             7 -> #stack(1)
-135 - 2 - pull 519 ->                             #139
-138 - 1 - push 115 ->                             #stack(1)
-141 - 32 - out s                             -> #stack(2)
-144 - 1 - push 7 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             7 -> #stack(1)
-153 - 2 - pull 8 ->                             #512
-156 - 1 - push 8 ->                             #stack(1)
+120 - 16 - ifle not 7 <= 18 -> #ip(162)
+123 - 2 - pull 7 -> #512
+126 - 1 - push 7 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 7
+135 - 2 - pull 519 -> #139
+138 - 1 - push 115 -> #stack(1)
+141 - 32 - out s
+144 - 1 - push 7 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 7
+153 - 2 - pull 8 -> #512
+156 - 1 - push 8 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 8                             <= 18 -> #ip(162)
-123 - 2 - pull 8 ->                             #512
-126 - 1 - push 8 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             8 -> #stack(1)
-135 - 2 - pull 520 ->                             #139
-138 - 1 - push 32 ->                             #stack(1)
-141 - 32 - out                               -> #stack(2)
-144 - 1 - push 8 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             8 -> #stack(1)
-153 - 2 - pull 9 ->                             #512
-156 - 1 - push 9 ->                             #stack(1)
+120 - 16 - ifle not 8 <= 18 -> #ip(162)
+123 - 2 - pull 8 -> #512
+126 - 1 - push 8 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 8
+135 - 2 - pull 520 -> #139
+138 - 1 - push 32 -> #stack(1)
+141 - 32 - out  
+144 - 1 - push 8 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 8
+153 - 2 - pull 9 -> #512
+156 - 1 - push 9 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 9                             <= 18 -> #ip(162)
-123 - 2 - pull 9 ->                             #512
-126 - 1 - push 9 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             9 -> #stack(1)
-135 - 2 - pull 521 ->                             #139
-138 - 1 - push 121 ->                             #stack(1)
-141 - 32 - out y                             -> #stack(2)
-144 - 1 - push 9 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             9 -> #stack(1)
-153 - 2 - pull 10 ->                             #512
-156 - 1 - push 10 ->                             #stack(1)
+120 - 16 - ifle not 9 <= 18 -> #ip(162)
+123 - 2 - pull 9 -> #512
+126 - 1 - push 9 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 9
+135 - 2 - pull 521 -> #139
+138 - 1 - push 121 -> #stack(1)
+141 - 32 - out y
+144 - 1 - push 9 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 9
+153 - 2 - pull 10 -> #512
+156 - 1 - push 10 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 10                             <= 18 -> #ip(162)
-123 - 2 - pull 10 ->                             #512
-126 - 1 - push 10 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             10 -> #stack(1)
-135 - 2 - pull 522 ->                             #139
-138 - 1 - push 111 ->                             #stack(1)
-141 - 32 - out o                             -> #stack(2)
-144 - 1 - push 10 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             10 -> #stack(1)
-153 - 2 - pull 11 ->                             #512
-156 - 1 - push 11 ->                             #stack(1)
+120 - 16 - ifle not 10 <= 18 -> #ip(162)
+123 - 2 - pull 10 -> #512
+126 - 1 - push 10 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 10
+135 - 2 - pull 522 -> #139
+138 - 1 - push 111 -> #stack(1)
+141 - 32 - out o
+144 - 1 - push 10 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 10
+153 - 2 - pull 11 -> #512
+156 - 1 - push 11 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 11                             <= 18 -> #ip(162)
-123 - 2 - pull 11 ->                             #512
-126 - 1 - push 11 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             11 -> #stack(1)
-135 - 2 - pull 523 ->                             #139
-138 - 1 - push 117 ->                             #stack(1)
-141 - 32 - out u                             -> #stack(2)
-144 - 1 - push 11 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             11 -> #stack(1)
-153 - 2 - pull 12 ->                             #512
-156 - 1 - push 12 ->                             #stack(1)
+120 - 16 - ifle not 11 <= 18 -> #ip(162)
+123 - 2 - pull 11 -> #512
+126 - 1 - push 11 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 11
+135 - 2 - pull 523 -> #139
+138 - 1 - push 117 -> #stack(1)
+141 - 32 - out u
+144 - 1 - push 11 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 11
+153 - 2 - pull 12 -> #512
+156 - 1 - push 12 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 12                             <= 18 -> #ip(162)
-123 - 2 - pull 12 ->                             #512
-126 - 1 - push 12 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             12 -> #stack(1)
-135 - 2 - pull 524 ->                             #139
-138 - 1 - push 114 ->                             #stack(1)
-141 - 32 - out r                             -> #stack(2)
-144 - 1 - push 12 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             12 -> #stack(1)
-153 - 2 - pull 13 ->                             #512
-156 - 1 - push 13 ->                             #stack(1)
+120 - 16 - ifle not 12 <= 18 -> #ip(162)
+123 - 2 - pull 12 -> #512
+126 - 1 - push 12 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 12
+135 - 2 - pull 524 -> #139
+138 - 1 - push 114 -> #stack(1)
+141 - 32 - out r
+144 - 1 - push 12 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 12
+153 - 2 - pull 13 -> #512
+156 - 1 - push 13 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 13                             <= 18 -> #ip(162)
-123 - 2 - pull 13 ->                             #512
-126 - 1 - push 13 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             13 -> #stack(1)
-135 - 2 - pull 525 ->                             #139
-138 - 1 - push 32 ->                             #stack(1)
-141 - 32 - out                               -> #stack(2)
-144 - 1 - push 13 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             13 -> #stack(1)
-153 - 2 - pull 14 ->                             #512
-156 - 1 - push 14 ->                             #stack(1)
+120 - 16 - ifle not 13 <= 18 -> #ip(162)
+123 - 2 - pull 13 -> #512
+126 - 1 - push 13 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 13
+135 - 2 - pull 525 -> #139
+138 - 1 - push 32 -> #stack(1)
+141 - 32 - out  
+144 - 1 - push 13 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 13
+153 - 2 - pull 14 -> #512
+156 - 1 - push 14 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 14                             <= 18 -> #ip(162)
-123 - 2 - pull 14 ->                             #512
-126 - 1 - push 14 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             14 -> #stack(1)
-135 - 2 - pull 526 ->                             #139
-138 - 1 - push 110 ->                             #stack(1)
-141 - 32 - out n                             -> #stack(2)
-144 - 1 - push 14 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             14 -> #stack(1)
-153 - 2 - pull 15 ->                             #512
-156 - 1 - push 15 ->                             #stack(1)
+120 - 16 - ifle not 14 <= 18 -> #ip(162)
+123 - 2 - pull 14 -> #512
+126 - 1 - push 14 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 14
+135 - 2 - pull 526 -> #139
+138 - 1 - push 110 -> #stack(1)
+141 - 32 - out n
+144 - 1 - push 14 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 14
+153 - 2 - pull 15 -> #512
+156 - 1 - push 15 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 15                             <= 18 -> #ip(162)
-123 - 2 - pull 15 ->                             #512
-126 - 1 - push 15 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             15 -> #stack(1)
-135 - 2 - pull 527 ->                             #139
-138 - 1 - push 97 ->                             #stack(1)
-141 - 32 - out a                             -> #stack(2)
-144 - 1 - push 15 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             15 -> #stack(1)
-153 - 2 - pull 16 ->                             #512
-156 - 1 - push 16 ->                             #stack(1)
+120 - 16 - ifle not 15 <= 18 -> #ip(162)
+123 - 2 - pull 15 -> #512
+126 - 1 - push 15 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 15
+135 - 2 - pull 527 -> #139
+138 - 1 - push 97 -> #stack(1)
+141 - 32 - out a
+144 - 1 - push 15 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 15
+153 - 2 - pull 16 -> #512
+156 - 1 - push 16 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 16                             <= 18 -> #ip(162)
-123 - 2 - pull 16 ->                             #512
-126 - 1 - push 16 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             16 -> #stack(1)
-135 - 2 - pull 528 ->                             #139
-138 - 1 - push 109 ->                             #stack(1)
-141 - 32 - out m                             -> #stack(2)
-144 - 1 - push 16 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             16 -> #stack(1)
-153 - 2 - pull 17 ->                             #512
-156 - 1 - push 17 ->                             #stack(1)
+120 - 16 - ifle not 16 <= 18 -> #ip(162)
+123 - 2 - pull 16 -> #512
+126 - 1 - push 16 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 16
+135 - 2 - pull 528 -> #139
+138 - 1 - push 109 -> #stack(1)
+141 - 32 - out m
+144 - 1 - push 16 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 16
+153 - 2 - pull 17 -> #512
+156 - 1 - push 17 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 17                             <= 18 -> #ip(162)
-123 - 2 - pull 17 ->                             #512
-126 - 1 - push 17 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             17 -> #stack(1)
-135 - 2 - pull 529 ->                             #139
-138 - 1 - push 101 ->                             #stack(1)
-141 - 32 - out e                             -> #stack(2)
-144 - 1 - push 17 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             17 -> #stack(1)
-153 - 2 - pull 18 ->                             #512
-156 - 1 - push 18 ->                             #stack(1)
+120 - 16 - ifle not 17 <= 18 -> #ip(162)
+123 - 2 - pull 17 -> #512
+126 - 1 - push 17 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 17
+135 - 2 - pull 529 -> #139
+138 - 1 - push 101 -> #stack(1)
+141 - 32 - out e
+144 - 1 - push 17 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 17
+153 - 2 - pull 18 -> #512
+156 - 1 - push 18 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 18                             <= 18 -> #ip(162)
-123 - 2 - pull 18 ->                             #512
-126 - 1 - push 18 ->                             #stack(1)
-129 - 20 - pushown 512                             -> #stack(2)
-132 - 3 - add 512 +                             18 -> #stack(1)
-135 - 2 - pull 530 ->                             #139
-138 - 1 - push 63 ->                             #stack(1)
-141 - 32 - out ?                             -> #stack(2)
-144 - 1 - push 18 ->                             #stack(1)
-147 - 20 - pushown 1                             -> #stack(2)
-150 - 3 - add 1 +                             18 -> #stack(1)
-153 - 2 - pull 19 ->                             #512
-156 - 1 - push 19 ->                             #stack(1)
+120 - 16 - ifle not 18 <= 18 -> #ip(162)
+123 - 2 - pull 18 -> #512
+126 - 1 - push 18 -> #stack(1)
+129 - 20 - pushown 512 -> #stack(2)
+132 - 3 - add 512 + 18
+135 - 2 - pull 530 -> #139
+138 - 1 - push 63 -> #stack(1)
+141 - 32 - out ?
+144 - 1 - push 18 -> #stack(1)
+147 - 20 - pushown 1 -> #stack(2)
+150 - 3 - add 1 + 18
+153 - 2 - pull 19 -> #512
+156 - 1 - push 19 -> #stack(1)
 159 - 10 - jmp 120 -> IP
-120 - 16 - ifle not 19                             <= 18 -> #ip(162)
+120 - 16 - ifle not 19 <= 18 -> #ip(162)
 162 - 21 - del #stack(1)
-165 - 2 - pull 18 ->                             #512
-168 - 20 - pushown 10                             -> #stack(0)
-171 - 31 - inp A ->                         #stack(1)
-174 - 14 - ifne not 65                             != 10 -> #ip(207)
-177 - 1 - push 0 ->                             #stack(2)
-180 - 20 - pushown 1                             -> #stack(3)
-183 - 3 - add 1 +                             0 -> #stack(2)
-186 - 2 - pull 1 ->                             #531
-189 - 1 - push 1 ->                             #stack(2)
-192 - 20 - pushown 531                             -> #stack(3)
-195 - 3 - add 531 +                             1 -> #stack(2)
-198 - 2 - pull 532 ->                             #202
-201 - 2 - pull 65 ->                             #532
+165 - 2 - pull 18 -> #512
+168 - 20 - pushown 10 -> #stack(0)
+171 - 31 - inp A 
+174 - 14 - ifne not 65 != 10 -> #ip(207)
+177 - 1 - push 0 -> #stack(2)
+180 - 20 - pushown 1 -> #stack(3)
+183 - 3 - add 1 + 0
+186 - 2 - pull 1 -> #531
+189 - 1 - push 1 -> #stack(2)
+192 - 20 - pushown 531 -> #stack(3)
+195 - 3 - add 531 + 1
+198 - 2 - pull 532 -> #202
+201 - 2 - pull 65 -> #532
 204 - 10 - jmp 171 -> IP
-171 - 31 - inp l ->                         #stack(1)
-174 - 14 - ifne not 108                             != 10 -> #ip(207)
-177 - 1 - push 1 ->                             #stack(2)
-180 - 20 - pushown 1                             -> #stack(3)
-183 - 3 - add 1 +                             1 -> #stack(2)
-186 - 2 - pull 2 ->                             #531
-189 - 1 - push 2 ->                             #stack(2)
-192 - 20 - pushown 531                             -> #stack(3)
-195 - 3 - add 531 +                             2 -> #stack(2)
-198 - 2 - pull 533 ->                             #202
-201 - 2 - pull 108 ->                             #533
+171 - 31 - inp l 
+174 - 14 - ifne not 108 != 10 -> #ip(207)
+177 - 1 - push 1 -> #stack(2)
+180 - 20 - pushown 1 -> #stack(3)
+183 - 3 - add 1 + 1
+186 - 2 - pull 2 -> #531
+189 - 1 - push 2 -> #stack(2)
+192 - 20 - pushown 531 -> #stack(3)
+195 - 3 - add 531 + 2
+198 - 2 - pull 533 -> #202
+201 - 2 - pull 108 -> #533
 204 - 10 - jmp 171 -> IP
-171 - 31 - inp i ->                         #stack(1)
-174 - 14 - ifne not 105                             != 10 -> #ip(207)
-177 - 1 - push 2 ->                             #stack(2)
-180 - 20 - pushown 1                             -> #stack(3)
-183 - 3 - add 1 +                             2 -> #stack(2)
-186 - 2 - pull 3 ->                             #531
-189 - 1 - push 3 ->                             #stack(2)
-192 - 20 - pushown 531                             -> #stack(3)
-195 - 3 - add 531 +                             3 -> #stack(2)
-198 - 2 - pull 534 ->                             #202
-201 - 2 - pull 105 ->                             #534
+171 - 31 - inp i 
+174 - 14 - ifne not 105 != 10 -> #ip(207)
+177 - 1 - push 2 -> #stack(2)
+180 - 20 - pushown 1 -> #stack(3)
+183 - 3 - add 1 + 2
+186 - 2 - pull 3 -> #531
+189 - 1 - push 3 -> #stack(2)
+192 - 20 - pushown 531 -> #stack(3)
+195 - 3 - add 531 + 3
+198 - 2 - pull 534 -> #202
+201 - 2 - pull 105 -> #534
 204 - 10 - jmp 171 -> IP
-171 - 31 - inp c ->                         #stack(1)
-174 - 14 - ifne not 99                             != 10 -> #ip(207)
-177 - 1 - push 3 ->                             #stack(2)
-180 - 20 - pushown 1                             -> #stack(3)
-183 - 3 - add 1 +                             3 -> #stack(2)
-186 - 2 - pull 4 ->                             #531
-189 - 1 - push 4 ->                             #stack(2)
-192 - 20 - pushown 531                             -> #stack(3)
-195 - 3 - add 531 +                             4 -> #stack(2)
-198 - 2 - pull 535 ->                             #202
-201 - 2 - pull 99 ->                             #535
+171 - 31 - inp c 
+174 - 14 - ifne not 99 != 10 -> #ip(207)
+177 - 1 - push 3 -> #stack(2)
+180 - 20 - pushown 1 -> #stack(3)
+183 - 3 - add 1 + 3
+186 - 2 - pull 4 -> #531
+189 - 1 - push 4 -> #stack(2)
+192 - 20 - pushown 531 -> #stack(3)
+195 - 3 - add 531 + 4
+198 - 2 - pull 535 -> #202
+201 - 2 - pull 99 -> #535
 204 - 10 - jmp 171 -> IP
-171 - 31 - inp e ->                         #stack(1)
-174 - 14 - ifne not 101                             != 10 -> #ip(207)
-177 - 1 - push 4 ->                             #stack(2)
-180 - 20 - pushown 1                             -> #stack(3)
-183 - 3 - add 1 +                             4 -> #stack(2)
-186 - 2 - pull 5 ->                             #531
-189 - 1 - push 5 ->                             #stack(2)
-192 - 20 - pushown 531                             -> #stack(3)
-195 - 3 - add 531 +                             5 -> #stack(2)
-198 - 2 - pull 536 ->                             #202
-201 - 2 - pull 101 ->                             #536
+171 - 31 - inp e 
+174 - 14 - ifne not 101 != 10 -> #ip(207)
+177 - 1 - push 4 -> #stack(2)
+180 - 20 - pushown 1 -> #stack(3)
+183 - 3 - add 1 + 4
+186 - 2 - pull 5 -> #531
+189 - 1 - push 5 -> #stack(2)
+192 - 20 - pushown 531 -> #stack(3)
+195 - 3 - add 531 + 5
+198 - 2 - pull 536 -> #202
+201 - 2 - pull 101 -> #536
 204 - 10 - jmp 171 -> IP
 171 - 31 - inp 
- ->                         #stack(1)
-174 - 14 - ifne not 10                             != 10 -> #ip(207)
+ 
+174 - 14 - ifne not 10 != 10 -> #ip(207)
 207 - 21 - del #stack(1)
-210 - 20 - pushown 32                             -> #stack(1)
-213 - 20 - pushown 44                             -> #stack(2)
-216 - 20 - pushown 111                             -> #stack(3)
-219 - 20 - pushown 108                             -> #stack(4)
-222 - 20 - pushown 108                             -> #stack(5)
-225 - 20 - pushown 101                             -> #stack(6)
-228 - 20 - pushown 72                             -> #stack(7)
-231 - 20 - pushown 7                             -> #stack(8)
-234 - 2 - pull 7 ->                             #563
-237 - 2 - pull 72 ->                             #564
-240 - 2 - pull 101 ->                             #565
-243 - 2 - pull 108 ->                             #566
-246 - 2 - pull 108 ->                             #567
-249 - 2 - pull 111 ->                             #568
-252 - 2 - pull 44 ->                             #569
-255 - 2 - pull 32 ->                             #570
-258 - 1 - push 7 ->                             #stack(1)
-261 - 20 - pushown 1                             -> #stack(2)
-264 - 16 - ifle not 1                             <= 7 -> #ip(306)
-267 - 2 - pull 1 ->                             #563
-270 - 1 - push 1 ->                             #stack(2)
-273 - 20 - pushown 563                             -> #stack(3)
-276 - 3 - add 563 +                             1 -> #stack(2)
-279 - 2 - pull 564 ->                             #283
-282 - 1 - push 72 ->                             #stack(2)
-285 - 32 - out H                             -> #stack(3)
-288 - 1 - push 1 ->                             #stack(2)
-291 - 20 - pushown 1                             -> #stack(3)
-294 - 3 - add 1 +                             1 -> #stack(2)
-297 - 2 - pull 2 ->                             #563
-300 - 1 - push 2 ->                             #stack(2)
+210 - 20 - pushown 32 -> #stack(1)
+213 - 20 - pushown 44 -> #stack(2)
+216 - 20 - pushown 111 -> #stack(3)
+219 - 20 - pushown 108 -> #stack(4)
+222 - 20 - pushown 108 -> #stack(5)
+225 - 20 - pushown 101 -> #stack(6)
+228 - 20 - pushown 72 -> #stack(7)
+231 - 20 - pushown 7 -> #stack(8)
+234 - 2 - pull 7 -> #563
+237 - 2 - pull 72 -> #564
+240 - 2 - pull 101 -> #565
+243 - 2 - pull 108 -> #566
+246 - 2 - pull 108 -> #567
+249 - 2 - pull 111 -> #568
+252 - 2 - pull 44 -> #569
+255 - 2 - pull 32 -> #570
+258 - 1 - push 7 -> #stack(1)
+261 - 20 - pushown 1 -> #stack(2)
+264 - 16 - ifle not 1 <= 7 -> #ip(306)
+267 - 2 - pull 1 -> #563
+270 - 1 - push 1 -> #stack(2)
+273 - 20 - pushown 563 -> #stack(3)
+276 - 3 - add 563 + 1
+279 - 2 - pull 564 -> #283
+282 - 1 - push 72 -> #stack(2)
+285 - 32 - out H
+288 - 1 - push 1 -> #stack(2)
+291 - 20 - pushown 1 -> #stack(3)
+294 - 3 - add 1 + 1
+297 - 2 - pull 2 -> #563
+300 - 1 - push 2 -> #stack(2)
 303 - 10 - jmp 264 -> IP
-264 - 16 - ifle not 2                             <= 7 -> #ip(306)
-267 - 2 - pull 2 ->                             #563
-270 - 1 - push 2 ->                             #stack(2)
-273 - 20 - pushown 563                             -> #stack(3)
-276 - 3 - add 563 +                             2 -> #stack(2)
-279 - 2 - pull 565 ->                             #283
-282 - 1 - push 101 ->                             #stack(2)
-285 - 32 - out e                             -> #stack(3)
-288 - 1 - push 2 ->                             #stack(2)
-291 - 20 - pushown 1                             -> #stack(3)
-294 - 3 - add 1 +                             2 -> #stack(2)
-297 - 2 - pull 3 ->                             #563
-300 - 1 - push 3 ->                             #stack(2)
+264 - 16 - ifle not 2 <= 7 -> #ip(306)
+267 - 2 - pull 2 -> #563
+270 - 1 - push 2 -> #stack(2)
+273 - 20 - pushown 563 -> #stack(3)
+276 - 3 - add 563 + 2
+279 - 2 - pull 565 -> #283
+282 - 1 - push 101 -> #stack(2)
+285 - 32 - out e
+288 - 1 - push 2 -> #stack(2)
+291 - 20 - pushown 1 -> #stack(3)
+294 - 3 - add 1 + 2
+297 - 2 - pull 3 -> #563
+300 - 1 - push 3 -> #stack(2)
 303 - 10 - jmp 264 -> IP
-264 - 16 - ifle not 3                             <= 7 -> #ip(306)
-267 - 2 - pull 3 ->                             #563
-270 - 1 - push 3 ->                             #stack(2)
-273 - 20 - pushown 563                             -> #stack(3)
-276 - 3 - add 563 +                             3 -> #stack(2)
-279 - 2 - pull 566 ->                             #283
-282 - 1 - push 108 ->                             #stack(2)
-285 - 32 - out l                             -> #stack(3)
-288 - 1 - push 3 ->                             #stack(2)
-291 - 20 - pushown 1                             -> #stack(3)
-294 - 3 - add 1 +                             3 -> #stack(2)
-297 - 2 - pull 4 ->                             #563
-300 - 1 - push 4 ->                             #stack(2)
+264 - 16 - ifle not 3 <= 7 -> #ip(306)
+267 - 2 - pull 3 -> #563
+270 - 1 - push 3 -> #stack(2)
+273 - 20 - pushown 563 -> #stack(3)
+276 - 3 - add 563 + 3
+279 - 2 - pull 566 -> #283
+282 - 1 - push 108 -> #stack(2)
+285 - 32 - out l
+288 - 1 - push 3 -> #stack(2)
+291 - 20 - pushown 1 -> #stack(3)
+294 - 3 - add 1 + 3
+297 - 2 - pull 4 -> #563
+300 - 1 - push 4 -> #stack(2)
 303 - 10 - jmp 264 -> IP
-264 - 16 - ifle not 4                             <= 7 -> #ip(306)
-267 - 2 - pull 4 ->                             #563
-270 - 1 - push 4 ->                             #stack(2)
-273 - 20 - pushown 563                             -> #stack(3)
-276 - 3 - add 563 +                             4 -> #stack(2)
-279 - 2 - pull 567 ->                             #283
-282 - 1 - push 108 ->                             #stack(2)
-285 - 32 - out l                             -> #stack(3)
-288 - 1 - push 4 ->                             #stack(2)
-291 - 20 - pushown 1                             -> #stack(3)
-294 - 3 - add 1 +                             4 -> #stack(2)
-297 - 2 - pull 5 ->                             #563
-300 - 1 - push 5 ->                             #stack(2)
+264 - 16 - ifle not 4 <= 7 -> #ip(306)
+267 - 2 - pull 4 -> #563
+270 - 1 - push 4 -> #stack(2)
+273 - 20 - pushown 563 -> #stack(3)
+276 - 3 - add 563 + 4
+279 - 2 - pull 567 -> #283
+282 - 1 - push 108 -> #stack(2)
+285 - 32 - out l
+288 - 1 - push 4 -> #stack(2)
+291 - 20 - pushown 1 -> #stack(3)
+294 - 3 - add 1 + 4
+297 - 2 - pull 5 -> #563
+300 - 1 - push 5 -> #stack(2)
 303 - 10 - jmp 264 -> IP
-264 - 16 - ifle not 5                             <= 7 -> #ip(306)
-267 - 2 - pull 5 ->                             #563
-270 - 1 - push 5 ->                             #stack(2)
-273 - 20 - pushown 563                             -> #stack(3)
-276 - 3 - add 563 +                             5 -> #stack(2)
-279 - 2 - pull 568 ->                             #283
-282 - 1 - push 111 ->                             #stack(2)
-285 - 32 - out o                             -> #stack(3)
-288 - 1 - push 5 ->                             #stack(2)
-291 - 20 - pushown 1                             -> #stack(3)
-294 - 3 - add 1 +                             5 -> #stack(2)
-297 - 2 - pull 6 ->                             #563
-300 - 1 - push 6 ->                             #stack(2)
+264 - 16 - ifle not 5 <= 7 -> #ip(306)
+267 - 2 - pull 5 -> #563
+270 - 1 - push 5 -> #stack(2)
+273 - 20 - pushown 563 -> #stack(3)
+276 - 3 - add 563 + 5
+279 - 2 - pull 568 -> #283
+282 - 1 - push 111 -> #stack(2)
+285 - 32 - out o
+288 - 1 - push 5 -> #stack(2)
+291 - 20 - pushown 1 -> #stack(3)
+294 - 3 - add 1 + 5
+297 - 2 - pull 6 -> #563
+300 - 1 - push 6 -> #stack(2)
 303 - 10 - jmp 264 -> IP
-264 - 16 - ifle not 6                             <= 7 -> #ip(306)
-267 - 2 - pull 6 ->                             #563
-270 - 1 - push 6 ->                             #stack(2)
-273 - 20 - pushown 563                             -> #stack(3)
-276 - 3 - add 563 +                             6 -> #stack(2)
-279 - 2 - pull 569 ->                             #283
-282 - 1 - push 44 ->                             #stack(2)
-285 - 32 - out ,                             -> #stack(3)
-288 - 1 - push 6 ->                             #stack(2)
-291 - 20 - pushown 1                             -> #stack(3)
-294 - 3 - add 1 +                             6 -> #stack(2)
-297 - 2 - pull 7 ->                             #563
-300 - 1 - push 7 ->                             #stack(2)
+264 - 16 - ifle not 6 <= 7 -> #ip(306)
+267 - 2 - pull 6 -> #563
+270 - 1 - push 6 -> #stack(2)
+273 - 20 - pushown 563 -> #stack(3)
+276 - 3 - add 563 + 6
+279 - 2 - pull 569 -> #283
+282 - 1 - push 44 -> #stack(2)
+285 - 32 - out ,
+288 - 1 - push 6 -> #stack(2)
+291 - 20 - pushown 1 -> #stack(3)
+294 - 3 - add 1 + 6
+297 - 2 - pull 7 -> #563
+300 - 1 - push 7 -> #stack(2)
 303 - 10 - jmp 264 -> IP
-264 - 16 - ifle not 7                             <= 7 -> #ip(306)
-267 - 2 - pull 7 ->                             #563
-270 - 1 - push 7 ->                             #stack(2)
-273 - 20 - pushown 563                             -> #stack(3)
-276 - 3 - add 563 +                             7 -> #stack(2)
-279 - 2 - pull 570 ->                             #283
-282 - 1 - push 32 ->                             #stack(2)
-285 - 32 - out                               -> #stack(3)
-288 - 1 - push 7 ->                             #stack(2)
-291 - 20 - pushown 1                             -> #stack(3)
-294 - 3 - add 1 +                             7 -> #stack(2)
-297 - 2 - pull 8 ->                             #563
-300 - 1 - push 8 ->                             #stack(2)
+264 - 16 - ifle not 7 <= 7 -> #ip(306)
+267 - 2 - pull 7 -> #563
+270 - 1 - push 7 -> #stack(2)
+273 - 20 - pushown 563 -> #stack(3)
+276 - 3 - add 563 + 7
+279 - 2 - pull 570 -> #283
+282 - 1 - push 32 -> #stack(2)
+285 - 32 - out  
+288 - 1 - push 7 -> #stack(2)
+291 - 20 - pushown 1 -> #stack(3)
+294 - 3 - add 1 + 7
+297 - 2 - pull 8 -> #563
+300 - 1 - push 8 -> #stack(2)
 303 - 10 - jmp 264 -> IP
-264 - 16 - ifle not 8                             <= 7 -> #ip(306)
+264 - 16 - ifle not 8 <= 7 -> #ip(306)
 306 - 21 - del #stack(2)
-309 - 2 - pull 7 ->                             #563
-312 - 1 - push 5 ->                             #stack(1)
-315 - 20 - pushown 1                             -> #stack(2)
-318 - 16 - ifle not 1                             <= 5 -> #ip(360)
-321 - 2 - pull 1 ->                             #531
-324 - 1 - push 1 ->                             #stack(2)
-327 - 20 - pushown 531                             -> #stack(3)
-330 - 3 - add 531 +                             1 -> #stack(2)
-333 - 2 - pull 532 ->                             #337
-336 - 1 - push 65 ->                             #stack(2)
-339 - 32 - out A                             -> #stack(3)
-342 - 1 - push 1 ->                             #stack(2)
-345 - 20 - pushown 1                             -> #stack(3)
-348 - 3 - add 1 +                             1 -> #stack(2)
-351 - 2 - pull 2 ->                             #531
-354 - 1 - push 2 ->                             #stack(2)
+309 - 2 - pull 7 -> #563
+312 - 1 - push 5 -> #stack(1)
+315 - 20 - pushown 1 -> #stack(2)
+318 - 16 - ifle not 1 <= 5 -> #ip(360)
+321 - 2 - pull 1 -> #531
+324 - 1 - push 1 -> #stack(2)
+327 - 20 - pushown 531 -> #stack(3)
+330 - 3 - add 531 + 1
+333 - 2 - pull 532 -> #337
+336 - 1 - push 65 -> #stack(2)
+339 - 32 - out A
+342 - 1 - push 1 -> #stack(2)
+345 - 20 - pushown 1 -> #stack(3)
+348 - 3 - add 1 + 1
+351 - 2 - pull 2 -> #531
+354 - 1 - push 2 -> #stack(2)
 357 - 10 - jmp 318 -> IP
-318 - 16 - ifle not 2                             <= 5 -> #ip(360)
-321 - 2 - pull 2 ->                             #531
-324 - 1 - push 2 ->                             #stack(2)
-327 - 20 - pushown 531                             -> #stack(3)
-330 - 3 - add 531 +                             2 -> #stack(2)
-333 - 2 - pull 533 ->                             #337
-336 - 1 - push 108 ->                             #stack(2)
-339 - 32 - out l                             -> #stack(3)
-342 - 1 - push 2 ->                             #stack(2)
-345 - 20 - pushown 1                             -> #stack(3)
-348 - 3 - add 1 +                             2 -> #stack(2)
-351 - 2 - pull 3 ->                             #531
-354 - 1 - push 3 ->                             #stack(2)
+318 - 16 - ifle not 2 <= 5 -> #ip(360)
+321 - 2 - pull 2 -> #531
+324 - 1 - push 2 -> #stack(2)
+327 - 20 - pushown 531 -> #stack(3)
+330 - 3 - add 531 + 2
+333 - 2 - pull 533 -> #337
+336 - 1 - push 108 -> #stack(2)
+339 - 32 - out l
+342 - 1 - push 2 -> #stack(2)
+345 - 20 - pushown 1 -> #stack(3)
+348 - 3 - add 1 + 2
+351 - 2 - pull 3 -> #531
+354 - 1 - push 3 -> #stack(2)
 357 - 10 - jmp 318 -> IP
-318 - 16 - ifle not 3                             <= 5 -> #ip(360)
-321 - 2 - pull 3 ->                             #531
-324 - 1 - push 3 ->                             #stack(2)
-327 - 20 - pushown 531                             -> #stack(3)
-330 - 3 - add 531 +                             3 -> #stack(2)
-333 - 2 - pull 534 ->                             #337
-336 - 1 - push 105 ->                             #stack(2)
-339 - 32 - out i                             -> #stack(3)
-342 - 1 - push 3 ->                             #stack(2)
-345 - 20 - pushown 1                             -> #stack(3)
-348 - 3 - add 1 +                             3 -> #stack(2)
-351 - 2 - pull 4 ->                             #531
-354 - 1 - push 4 ->                             #stack(2)
+318 - 16 - ifle not 3 <= 5 -> #ip(360)
+321 - 2 - pull 3 -> #531
+324 - 1 - push 3 -> #stack(2)
+327 - 20 - pushown 531 -> #stack(3)
+330 - 3 - add 531 + 3
+333 - 2 - pull 534 -> #337
+336 - 1 - push 105 -> #stack(2)
+339 - 32 - out i
+342 - 1 - push 3 -> #stack(2)
+345 - 20 - pushown 1 -> #stack(3)
+348 - 3 - add 1 + 3
+351 - 2 - pull 4 -> #531
+354 - 1 - push 4 -> #stack(2)
 357 - 10 - jmp 318 -> IP
-318 - 16 - ifle not 4                             <= 5 -> #ip(360)
-321 - 2 - pull 4 ->                             #531
-324 - 1 - push 4 ->                             #stack(2)
-327 - 20 - pushown 531                             -> #stack(3)
-330 - 3 - add 531 +                             4 -> #stack(2)
-333 - 2 - pull 535 ->                             #337
-336 - 1 - push 99 ->                             #stack(2)
-339 - 32 - out c                             -> #stack(3)
-342 - 1 - push 4 ->                             #stack(2)
-345 - 20 - pushown 1                             -> #stack(3)
-348 - 3 - add 1 +                             4 -> #stack(2)
-351 - 2 - pull 5 ->                             #531
-354 - 1 - push 5 ->                             #stack(2)
+318 - 16 - ifle not 4 <= 5 -> #ip(360)
+321 - 2 - pull 4 -> #531
+324 - 1 - push 4 -> #stack(2)
+327 - 20 - pushown 531 -> #stack(3)
+330 - 3 - add 531 + 4
+333 - 2 - pull 535 -> #337
+336 - 1 - push 99 -> #stack(2)
+339 - 32 - out c
+342 - 1 - push 4 -> #stack(2)
+345 - 20 - pushown 1 -> #stack(3)
+348 - 3 - add 1 + 4
+351 - 2 - pull 5 -> #531
+354 - 1 - push 5 -> #stack(2)
 357 - 10 - jmp 318 -> IP
-318 - 16 - ifle not 5                             <= 5 -> #ip(360)
-321 - 2 - pull 5 ->                             #531
-324 - 1 - push 5 ->                             #stack(2)
-327 - 20 - pushown 531                             -> #stack(3)
-330 - 3 - add 531 +                             5 -> #stack(2)
-333 - 2 - pull 536 ->                             #337
-336 - 1 - push 101 ->                             #stack(2)
-339 - 32 - out e                             -> #stack(3)
-342 - 1 - push 5 ->                             #stack(2)
-345 - 20 - pushown 1                             -> #stack(3)
-348 - 3 - add 1 +                             5 -> #stack(2)
-351 - 2 - pull 6 ->                             #531
-354 - 1 - push 6 ->                             #stack(2)
+318 - 16 - ifle not 5 <= 5 -> #ip(360)
+321 - 2 - pull 5 -> #531
+324 - 1 - push 5 -> #stack(2)
+327 - 20 - pushown 531 -> #stack(3)
+330 - 3 - add 531 + 5
+333 - 2 - pull 536 -> #337
+336 - 1 - push 101 -> #stack(2)
+339 - 32 - out e
+342 - 1 - push 5 -> #stack(2)
+345 - 20 - pushown 1 -> #stack(3)
+348 - 3 - add 1 + 5
+351 - 2 - pull 6 -> #531
+354 - 1 - push 6 -> #stack(2)
 357 - 10 - jmp 318 -> IP
-318 - 16 - ifle not 6                             <= 5 -> #ip(360)
+318 - 16 - ifle not 6 <= 5 -> #ip(360)
 360 - 21 - del #stack(2)
-363 - 2 - pull 5 ->                             #531
-366 - 20 - pushown 33                             -> #stack(1)
-369 - 20 - pushown 1                             -> #stack(2)
-372 - 2 - pull 1 ->                             #571
-375 - 2 - pull 33 ->                             #572
-378 - 1 - push 1 ->                             #stack(1)
-381 - 20 - pushown 1                             -> #stack(2)
-384 - 16 - ifle not 1                             <= 1 -> #ip(426)
-387 - 2 - pull 1 ->                             #571
-390 - 1 - push 1 ->                             #stack(2)
-393 - 20 - pushown 571                             -> #stack(3)
-396 - 3 - add 571 +                             1 -> #stack(2)
-399 - 2 - pull 572 ->                             #403
-402 - 1 - push 33 ->                             #stack(2)
-405 - 32 - out !                             -> #stack(3)
-408 - 1 - push 1 ->                             #stack(2)
-411 - 20 - pushown 1                             -> #stack(3)
-414 - 3 - add 1 +                             1 -> #stack(2)
-417 - 2 - pull 2 ->                             #571
-420 - 1 - push 2 ->                             #stack(2)
+363 - 2 - pull 5 -> #531
+366 - 20 - pushown 33 -> #stack(1)
+369 - 20 - pushown 1 -> #stack(2)
+372 - 2 - pull 1 -> #571
+375 - 2 - pull 33 -> #572
+378 - 1 - push 1 -> #stack(1)
+381 - 20 - pushown 1 -> #stack(2)
+384 - 16 - ifle not 1 <= 1 -> #ip(426)
+387 - 2 - pull 1 -> #571
+390 - 1 - push 1 -> #stack(2)
+393 - 20 - pushown 571 -> #stack(3)
+396 - 3 - add 571 + 1
+399 - 2 - pull 572 -> #403
+402 - 1 - push 33 -> #stack(2)
+405 - 32 - out !
+408 - 1 - push 1 -> #stack(2)
+411 - 20 - pushown 1 -> #stack(3)
+414 - 3 - add 1 + 1
+417 - 2 - pull 2 -> #571
+420 - 1 - push 2 -> #stack(2)
 423 - 10 - jmp 384 -> IP
-384 - 16 - ifle not 2                             <= 1 -> #ip(426)
+384 - 16 - ifle not 2 <= 1 -> #ip(426)
 426 - 21 - del #stack(2)
-429 - 2 - pull 1 ->                             #571
+429 - 2 - pull 1 -> #571
 432 - 0 - hlt
