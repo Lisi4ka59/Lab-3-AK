@@ -23,48 +23,42 @@ def branch_unit(instruction, logger):
 
         case 11:  # Переход если не выполняется условие ">"
             logger.write(
-                f"{instr_pointer} - {memory[instr_pointer]} - ifm not {memory[stack_pointer - 1]} > \
-                                        {memory[stack_pointer - 2]} -> #ip({memory[instr_pointer + 1]})\n")
+                f"{instr_pointer} - {memory[instr_pointer]} - ifm not {memory[stack_pointer - 1]} > {memory[stack_pointer - 2]} -> #ip({memory[instr_pointer + 1]})\n")
             if not (memory[stack_pointer - 1] > memory[stack_pointer - 2]):
                 return memory[instr_pointer + 1]
             return None
 
         case 12:  # Переход если не выполняется условие "<"
             logger.write(
-                f"{instr_pointer} - {memory[instr_pointer]} - ifl not {memory[stack_pointer - 1]} < \
-                                        {memory[stack_pointer - 2]} -> #ip({memory[instr_pointer + 1]})\n")
+                f"{instr_pointer} - {memory[instr_pointer]} - ifl not {memory[stack_pointer - 1]} < {memory[stack_pointer - 2]} -> #ip({memory[instr_pointer + 1]})\n")
             if not (memory[stack_pointer - 1] < memory[stack_pointer - 2]):
                 return memory[instr_pointer + 1]
             return None
 
         case 13:  # Переход если не выполняется условие "=="
             logger.write(
-                f"{instr_pointer} - {memory[instr_pointer]} - ife not {memory[stack_pointer - 1]} \
-                                        == {memory[stack_pointer - 2]} -> #ip({memory[instr_pointer + 1]})\n")
+                f"{instr_pointer} - {memory[instr_pointer]} - ife not {memory[stack_pointer - 1]} == {memory[stack_pointer - 2]} -> #ip({memory[instr_pointer + 1]})\n")
             if not (memory[stack_pointer - 1] == memory[stack_pointer - 2]):
                 return memory[instr_pointer + 1]
             return None
 
         case 14:  # Переход если не выполняется условие "!="
             logger.write(
-                f"{instr_pointer} - {memory[instr_pointer]} - ifne not {memory[stack_pointer - 1]} \
-                                        != {memory[stack_pointer - 2]} -> #ip({memory[instr_pointer + 1]})\n")
+                f"{instr_pointer} - {memory[instr_pointer]} - ifne not {memory[stack_pointer - 1]} != {memory[stack_pointer - 2]} -> #ip({memory[instr_pointer + 1]})\n")
             if not (memory[stack_pointer - 1] != memory[stack_pointer - 2]):
                 return memory[instr_pointer + 1]
             return None
 
         case 15:  # Переход если не выполняется условие ">="
             logger.write(
-                f"{instr_pointer} - {memory[instr_pointer]} - ifme not {memory[stack_pointer - 1]} \
-                                        >= {memory[stack_pointer - 2]} -> #ip({memory[instr_pointer + 1]})\n")
+                f"{instr_pointer} - {memory[instr_pointer]} - ifme not {memory[stack_pointer - 1]} >= {memory[stack_pointer - 2]} -> #ip({memory[instr_pointer + 1]})\n")
             if not (memory[stack_pointer - 1] >= memory[stack_pointer - 2]):
                 return memory[instr_pointer + 1]
             return None
 
         case 16:  # Переход если не выполняется условие "<="
             logger.write(
-                f"{instr_pointer} - {memory[instr_pointer]} - ifle not {memory[stack_pointer - 1]} \
-                                        <= {memory[stack_pointer - 2]} -> #ip({memory[instr_pointer + 1]})\n")
+                f"{instr_pointer} - {memory[instr_pointer]} - ifle not {memory[stack_pointer - 1]} <= {memory[stack_pointer - 2]} -> #ip({memory[instr_pointer + 1]})\n")
             if not (memory[stack_pointer - 1] <= memory[stack_pointer - 2]):
                 return memory[instr_pointer + 1]
             return None
@@ -82,16 +76,14 @@ with open("log.txt", "w") as log:
 
                     case 1:  # Берет из памяти, записывает на вершину стека
                         log.write(
-                            f"{instr_pointer} - {memory[instr_pointer]} - push {memory[memory[instr_pointer + 1]]} -> \
-                            #stack({stack_pointer - stack_head})\n")
+                            f"{instr_pointer} - {memory[instr_pointer]} - push {memory[memory[instr_pointer + 1]]} -> #stack({stack_pointer - stack_head})\n")
                         memory[stack_pointer] = memory[memory[instr_pointer + 1]]
                         stack_pointer += 1
 
                     case 2:  # Берет из стека, записывает в память по адресу
                         stack_pointer -= 1
                         log.write(
-                            f"{instr_pointer} - {memory[instr_pointer]} - pull {memory[stack_pointer]} -> \
-                            #{memory[instr_pointer + 1]}\n")
+                            f"{instr_pointer} - {memory[instr_pointer]} - pull {memory[stack_pointer]} -> #{memory[instr_pointer + 1]}\n")
                         memory[memory[instr_pointer + 1]] = memory[stack_pointer]
                         memory[stack_pointer] = 0
 
@@ -110,8 +102,7 @@ with open("log.txt", "w") as log:
 
                     case 20:  # Записывает на вершину стека свой операнд
                         log.write(
-                            f"{instr_pointer} - {memory[instr_pointer]} - pushown {memory[instr_pointer + 1]} \
-                            -> #stack({stack_pointer - stack_head})\n")
+                            f"{instr_pointer} - {memory[instr_pointer]} - pushown {memory[instr_pointer + 1]} -> #stack({stack_pointer - stack_head})\n")
                         memory[stack_pointer] = memory[instr_pointer + 1]
                         stack_pointer += 1
 
