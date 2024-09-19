@@ -49,7 +49,7 @@ jobs:
         echo -e "fshbdkjkf;navl kjsfrbilVAHBHDLFADNVJDIGBLUIEVJCvnfs43875t45yrgi" > input.txt
         python main.py < tests/Cat/Cat_test
         python control_unit.py
-        pytest tests/Cat/test_cat.py::test_input_log
+        pytest tests/Cat/test_cat.py
 
         echo -e "Alice\n" > input.txt
         python main.py < tests/Hello_user_name/Hello_user_name_test
