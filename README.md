@@ -231,755 +231,755 @@ PrintI(prom)
 
 #### Лог выполнения машины
 ```
-0 - 20 - pushown 1                             -> #stack(0)
-3 - 2 - pull 1 ->                             #512
-6 - 20 - pushown 1                             -> #stack(0)
-9 - 2 - pull 1 ->                             #513
-12 - 20 - pushown 0                             -> #stack(0)
-15 - 2 - pull 0 ->                             #514
-18 - 20 - pushown 4000000                             -> #stack(0)
-21 - 1 - push 1 ->                             #stack(1)
-24 - 12 - ifl not 1 <                             4000000 -> #ip(99)
+0 - 20 - pushown 1 -> #stack(0)
+3 - 2 - pull 1 -> #512
+6 - 20 - pushown 1 -> #stack(0)
+9 - 2 - pull 1 -> #513
+12 - 20 - pushown 0 -> #stack(0)
+15 - 2 - pull 0 -> #514
+18 - 20 - pushown 4000000 -> #stack(0)
+21 - 1 - push 1 -> #stack(1)
+24 - 12 - ifl not 1 < 4000000 -> #ip(99)
 27 - 21 - del #stack(1)
 30 - 21 - del #stack(0)
-33 - 20 - pushown 2                             -> #stack(0)
-36 - 1 - push 1 ->                             #stack(1)
-39 - 7 - mod 1 %                             2 -> #stack(0)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(0)
-48 - 1 - push 1 ->                             #stack(1)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 1 ->                             #stack(2)
-75 - 1 - push 1 ->                             #stack(3)
-78 - 3 - add 1 +                             1 -> #stack(2)
-81 - 2 - pull 2 ->                             #516
-84 - 1 - push 1 ->                             #stack(2)
-87 - 2 - pull 1 ->                             #513
-90 - 1 - push 2 ->                             #stack(2)
-93 - 2 - pull 2 ->                             #512
+33 - 20 - pushown 2 -> #stack(0)
+36 - 1 - push 1 -> #stack(1)
+39 - 7 - mod 1 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(0)
+48 - 1 - push 1 -> #stack(1)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 1 -> #stack(2)
+75 - 1 - push 1 -> #stack(3)
+78 - 3 - add 1 + 1
+81 - 2 - pull 2 -> #516
+84 - 1 - push 1 -> #stack(2)
+87 - 2 - pull 1 -> #513
+90 - 1 - push 2 -> #stack(2)
+93 - 2 - pull 2 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(2)
-21 - 1 - push 2 ->                             #stack(3)
-24 - 12 - ifl not 2 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(2)
+21 - 1 - push 2 -> #stack(3)
+24 - 12 - ifl not 2 < 4000000 -> #ip(99)
 27 - 21 - del #stack(3)
 30 - 21 - del #stack(2)
-33 - 20 - pushown 2                             -> #stack(2)
-36 - 1 - push 2 ->                             #stack(3)
-39 - 7 - mod 2 %                             2 -> #stack(2)
-42 - 2 - pull 0 ->                             #515
-45 - 20 - pushown 0                             -> #stack(2)
-48 - 1 - push 0 ->                             #stack(3)
-51 - 13 - ife not 0                             == 0 -> #ip(72)
+33 - 20 - pushown 2 -> #stack(2)
+36 - 1 - push 2 -> #stack(3)
+39 - 7 - mod 2 % 2
+42 - 2 - pull 0 -> #515
+45 - 20 - pushown 0 -> #stack(2)
+48 - 1 - push 0 -> #stack(3)
+51 - 13 - ife not 0 == 0 -> #ip(72)
 54 - 21 - del #stack(3)
 57 - 21 - del #stack(2)
-60 - 1 - push 2 ->                             #stack(2)
-63 - 1 - push 0 ->                             #stack(3)
-66 - 3 - add 0 +                             2 -> #stack(2)
-69 - 2 - pull 2 ->                             #514
-72 - 1 - push 1 ->                             #stack(2)
-75 - 1 - push 2 ->                             #stack(3)
-78 - 3 - add 2 +                             1 -> #stack(2)
-81 - 2 - pull 3 ->                             #516
-84 - 1 - push 2 ->                             #stack(2)
-87 - 2 - pull 2 ->                             #513
-90 - 1 - push 3 ->                             #stack(2)
-93 - 2 - pull 3 ->                             #512
+60 - 1 - push 2 -> #stack(2)
+63 - 1 - push 0 -> #stack(3)
+66 - 3 - add 0 + 2
+69 - 2 - pull 2 -> #514
+72 - 1 - push 1 -> #stack(2)
+75 - 1 - push 2 -> #stack(3)
+78 - 3 - add 2 + 1
+81 - 2 - pull 3 -> #516
+84 - 1 - push 2 -> #stack(2)
+87 - 2 - pull 2 -> #513
+90 - 1 - push 3 -> #stack(2)
+93 - 2 - pull 3 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(2)
-21 - 1 - push 3 ->                             #stack(3)
-24 - 12 - ifl not 3 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(2)
+21 - 1 - push 3 -> #stack(3)
+24 - 12 - ifl not 3 < 4000000 -> #ip(99)
 27 - 21 - del #stack(3)
 30 - 21 - del #stack(2)
-33 - 20 - pushown 2                             -> #stack(2)
-36 - 1 - push 3 ->                             #stack(3)
-39 - 7 - mod 3 %                             2 -> #stack(2)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(2)
-48 - 1 - push 1 ->                             #stack(3)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 2 ->                             #stack(4)
-75 - 1 - push 3 ->                             #stack(5)
-78 - 3 - add 3 +                             2 -> #stack(4)
-81 - 2 - pull 5 ->                             #516
-84 - 1 - push 3 ->                             #stack(4)
-87 - 2 - pull 3 ->                             #513
-90 - 1 - push 5 ->                             #stack(4)
-93 - 2 - pull 5 ->                             #512
+33 - 20 - pushown 2 -> #stack(2)
+36 - 1 - push 3 -> #stack(3)
+39 - 7 - mod 3 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(2)
+48 - 1 - push 1 -> #stack(3)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 2 -> #stack(4)
+75 - 1 - push 3 -> #stack(5)
+78 - 3 - add 3 + 2
+81 - 2 - pull 5 -> #516
+84 - 1 - push 3 -> #stack(4)
+87 - 2 - pull 3 -> #513
+90 - 1 - push 5 -> #stack(4)
+93 - 2 - pull 5 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(4)
-21 - 1 - push 5 ->                             #stack(5)
-24 - 12 - ifl not 5 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(4)
+21 - 1 - push 5 -> #stack(5)
+24 - 12 - ifl not 5 < 4000000 -> #ip(99)
 27 - 21 - del #stack(5)
 30 - 21 - del #stack(4)
-33 - 20 - pushown 2                             -> #stack(4)
-36 - 1 - push 5 ->                             #stack(5)
-39 - 7 - mod 5 %                             2 -> #stack(4)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(4)
-48 - 1 - push 1 ->                             #stack(5)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 3 ->                             #stack(6)
-75 - 1 - push 5 ->                             #stack(7)
-78 - 3 - add 5 +                             3 -> #stack(6)
-81 - 2 - pull 8 ->                             #516
-84 - 1 - push 5 ->                             #stack(6)
-87 - 2 - pull 5 ->                             #513
-90 - 1 - push 8 ->                             #stack(6)
-93 - 2 - pull 8 ->                             #512
+33 - 20 - pushown 2 -> #stack(4)
+36 - 1 - push 5 -> #stack(5)
+39 - 7 - mod 5 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(4)
+48 - 1 - push 1 -> #stack(5)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 3 -> #stack(6)
+75 - 1 - push 5 -> #stack(7)
+78 - 3 - add 5 + 3
+81 - 2 - pull 8 -> #516
+84 - 1 - push 5 -> #stack(6)
+87 - 2 - pull 5 -> #513
+90 - 1 - push 8 -> #stack(6)
+93 - 2 - pull 8 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(6)
-21 - 1 - push 8 ->                             #stack(7)
-24 - 12 - ifl not 8 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(6)
+21 - 1 - push 8 -> #stack(7)
+24 - 12 - ifl not 8 < 4000000 -> #ip(99)
 27 - 21 - del #stack(7)
 30 - 21 - del #stack(6)
-33 - 20 - pushown 2                             -> #stack(6)
-36 - 1 - push 8 ->                             #stack(7)
-39 - 7 - mod 8 %                             2 -> #stack(6)
-42 - 2 - pull 0 ->                             #515
-45 - 20 - pushown 0                             -> #stack(6)
-48 - 1 - push 0 ->                             #stack(7)
-51 - 13 - ife not 0                             == 0 -> #ip(72)
+33 - 20 - pushown 2 -> #stack(6)
+36 - 1 - push 8 -> #stack(7)
+39 - 7 - mod 8 % 2
+42 - 2 - pull 0 -> #515
+45 - 20 - pushown 0 -> #stack(6)
+48 - 1 - push 0 -> #stack(7)
+51 - 13 - ife not 0 == 0 -> #ip(72)
 54 - 21 - del #stack(7)
 57 - 21 - del #stack(6)
-60 - 1 - push 8 ->                             #stack(6)
-63 - 1 - push 2 ->                             #stack(7)
-66 - 3 - add 2 +                             8 -> #stack(6)
-69 - 2 - pull 10 ->                             #514
-72 - 1 - push 5 ->                             #stack(6)
-75 - 1 - push 8 ->                             #stack(7)
-78 - 3 - add 8 +                             5 -> #stack(6)
-81 - 2 - pull 13 ->                             #516
-84 - 1 - push 8 ->                             #stack(6)
-87 - 2 - pull 8 ->                             #513
-90 - 1 - push 13 ->                             #stack(6)
-93 - 2 - pull 13 ->                             #512
+60 - 1 - push 8 -> #stack(6)
+63 - 1 - push 2 -> #stack(7)
+66 - 3 - add 2 + 8
+69 - 2 - pull 10 -> #514
+72 - 1 - push 5 -> #stack(6)
+75 - 1 - push 8 -> #stack(7)
+78 - 3 - add 8 + 5
+81 - 2 - pull 13 -> #516
+84 - 1 - push 8 -> #stack(6)
+87 - 2 - pull 8 -> #513
+90 - 1 - push 13 -> #stack(6)
+93 - 2 - pull 13 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(6)
-21 - 1 - push 13 ->                             #stack(7)
-24 - 12 - ifl not 13 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(6)
+21 - 1 - push 13 -> #stack(7)
+24 - 12 - ifl not 13 < 4000000 -> #ip(99)
 27 - 21 - del #stack(7)
 30 - 21 - del #stack(6)
-33 - 20 - pushown 2                             -> #stack(6)
-36 - 1 - push 13 ->                             #stack(7)
-39 - 7 - mod 13 %                             2 -> #stack(6)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(6)
-48 - 1 - push 1 ->                             #stack(7)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 8 ->                             #stack(8)
-75 - 1 - push 13 ->                             #stack(9)
-78 - 3 - add 13 +                             8 -> #stack(8)
-81 - 2 - pull 21 ->                             #516
-84 - 1 - push 13 ->                             #stack(8)
-87 - 2 - pull 13 ->                             #513
-90 - 1 - push 21 ->                             #stack(8)
-93 - 2 - pull 21 ->                             #512
+33 - 20 - pushown 2 -> #stack(6)
+36 - 1 - push 13 -> #stack(7)
+39 - 7 - mod 13 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(6)
+48 - 1 - push 1 -> #stack(7)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 8 -> #stack(8)
+75 - 1 - push 13 -> #stack(9)
+78 - 3 - add 13 + 8
+81 - 2 - pull 21 -> #516
+84 - 1 - push 13 -> #stack(8)
+87 - 2 - pull 13 -> #513
+90 - 1 - push 21 -> #stack(8)
+93 - 2 - pull 21 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(8)
-21 - 1 - push 21 ->                             #stack(9)
-24 - 12 - ifl not 21 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(8)
+21 - 1 - push 21 -> #stack(9)
+24 - 12 - ifl not 21 < 4000000 -> #ip(99)
 27 - 21 - del #stack(9)
 30 - 21 - del #stack(8)
-33 - 20 - pushown 2                             -> #stack(8)
-36 - 1 - push 21 ->                             #stack(9)
-39 - 7 - mod 21 %                             2 -> #stack(8)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(8)
-48 - 1 - push 1 ->                             #stack(9)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 13 ->                             #stack(10)
-75 - 1 - push 21 ->                             #stack(11)
-78 - 3 - add 21 +                             13 -> #stack(10)
-81 - 2 - pull 34 ->                             #516
-84 - 1 - push 21 ->                             #stack(10)
-87 - 2 - pull 21 ->                             #513
-90 - 1 - push 34 ->                             #stack(10)
-93 - 2 - pull 34 ->                             #512
+33 - 20 - pushown 2 -> #stack(8)
+36 - 1 - push 21 -> #stack(9)
+39 - 7 - mod 21 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(8)
+48 - 1 - push 1 -> #stack(9)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 13 -> #stack(10)
+75 - 1 - push 21 -> #stack(11)
+78 - 3 - add 21 + 13
+81 - 2 - pull 34 -> #516
+84 - 1 - push 21 -> #stack(10)
+87 - 2 - pull 21 -> #513
+90 - 1 - push 34 -> #stack(10)
+93 - 2 - pull 34 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(10)
-21 - 1 - push 34 ->                             #stack(11)
-24 - 12 - ifl not 34 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(10)
+21 - 1 - push 34 -> #stack(11)
+24 - 12 - ifl not 34 < 4000000 -> #ip(99)
 27 - 21 - del #stack(11)
 30 - 21 - del #stack(10)
-33 - 20 - pushown 2                             -> #stack(10)
-36 - 1 - push 34 ->                             #stack(11)
-39 - 7 - mod 34 %                             2 -> #stack(10)
-42 - 2 - pull 0 ->                             #515
-45 - 20 - pushown 0                             -> #stack(10)
-48 - 1 - push 0 ->                             #stack(11)
-51 - 13 - ife not 0                             == 0 -> #ip(72)
+33 - 20 - pushown 2 -> #stack(10)
+36 - 1 - push 34 -> #stack(11)
+39 - 7 - mod 34 % 2
+42 - 2 - pull 0 -> #515
+45 - 20 - pushown 0 -> #stack(10)
+48 - 1 - push 0 -> #stack(11)
+51 - 13 - ife not 0 == 0 -> #ip(72)
 54 - 21 - del #stack(11)
 57 - 21 - del #stack(10)
-60 - 1 - push 34 ->                             #stack(10)
-63 - 1 - push 10 ->                             #stack(11)
-66 - 3 - add 10 +                             34 -> #stack(10)
-69 - 2 - pull 44 ->                             #514
-72 - 1 - push 21 ->                             #stack(10)
-75 - 1 - push 34 ->                             #stack(11)
-78 - 3 - add 34 +                             21 -> #stack(10)
-81 - 2 - pull 55 ->                             #516
-84 - 1 - push 34 ->                             #stack(10)
-87 - 2 - pull 34 ->                             #513
-90 - 1 - push 55 ->                             #stack(10)
-93 - 2 - pull 55 ->                             #512
+60 - 1 - push 34 -> #stack(10)
+63 - 1 - push 10 -> #stack(11)
+66 - 3 - add 10 + 34
+69 - 2 - pull 44 -> #514
+72 - 1 - push 21 -> #stack(10)
+75 - 1 - push 34 -> #stack(11)
+78 - 3 - add 34 + 21
+81 - 2 - pull 55 -> #516
+84 - 1 - push 34 -> #stack(10)
+87 - 2 - pull 34 -> #513
+90 - 1 - push 55 -> #stack(10)
+93 - 2 - pull 55 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(10)
-21 - 1 - push 55 ->                             #stack(11)
-24 - 12 - ifl not 55 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(10)
+21 - 1 - push 55 -> #stack(11)
+24 - 12 - ifl not 55 < 4000000 -> #ip(99)
 27 - 21 - del #stack(11)
 30 - 21 - del #stack(10)
-33 - 20 - pushown 2                             -> #stack(10)
-36 - 1 - push 55 ->                             #stack(11)
-39 - 7 - mod 55 %                             2 -> #stack(10)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(10)
-48 - 1 - push 1 ->                             #stack(11)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 34 ->                             #stack(12)
-75 - 1 - push 55 ->                             #stack(13)
-78 - 3 - add 55 +                             34 -> #stack(12)
-81 - 2 - pull 89 ->                             #516
-84 - 1 - push 55 ->                             #stack(12)
-87 - 2 - pull 55 ->                             #513
-90 - 1 - push 89 ->                             #stack(12)
-93 - 2 - pull 89 ->                             #512
+33 - 20 - pushown 2 -> #stack(10)
+36 - 1 - push 55 -> #stack(11)
+39 - 7 - mod 55 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(10)
+48 - 1 - push 1 -> #stack(11)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 34 -> #stack(12)
+75 - 1 - push 55 -> #stack(13)
+78 - 3 - add 55 + 34
+81 - 2 - pull 89 -> #516
+84 - 1 - push 55 -> #stack(12)
+87 - 2 - pull 55 -> #513
+90 - 1 - push 89 -> #stack(12)
+93 - 2 - pull 89 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(12)
-21 - 1 - push 89 ->                             #stack(13)
-24 - 12 - ifl not 89 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(12)
+21 - 1 - push 89 -> #stack(13)
+24 - 12 - ifl not 89 < 4000000 -> #ip(99)
 27 - 21 - del #stack(13)
 30 - 21 - del #stack(12)
-33 - 20 - pushown 2                             -> #stack(12)
-36 - 1 - push 89 ->                             #stack(13)
-39 - 7 - mod 89 %                             2 -> #stack(12)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(12)
-48 - 1 - push 1 ->                             #stack(13)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 55 ->                             #stack(14)
-75 - 1 - push 89 ->                             #stack(15)
-78 - 3 - add 89 +                             55 -> #stack(14)
-81 - 2 - pull 144 ->                             #516
-84 - 1 - push 89 ->                             #stack(14)
-87 - 2 - pull 89 ->                             #513
-90 - 1 - push 144 ->                             #stack(14)
-93 - 2 - pull 144 ->                             #512
+33 - 20 - pushown 2 -> #stack(12)
+36 - 1 - push 89 -> #stack(13)
+39 - 7 - mod 89 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(12)
+48 - 1 - push 1 -> #stack(13)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 55 -> #stack(14)
+75 - 1 - push 89 -> #stack(15)
+78 - 3 - add 89 + 55
+81 - 2 - pull 144 -> #516
+84 - 1 - push 89 -> #stack(14)
+87 - 2 - pull 89 -> #513
+90 - 1 - push 144 -> #stack(14)
+93 - 2 - pull 144 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(14)
-21 - 1 - push 144 ->                             #stack(15)
-24 - 12 - ifl not 144 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(14)
+21 - 1 - push 144 -> #stack(15)
+24 - 12 - ifl not 144 < 4000000 -> #ip(99)
 27 - 21 - del #stack(15)
 30 - 21 - del #stack(14)
-33 - 20 - pushown 2                             -> #stack(14)
-36 - 1 - push 144 ->                             #stack(15)
-39 - 7 - mod 144 %                             2 -> #stack(14)
-42 - 2 - pull 0 ->                             #515
-45 - 20 - pushown 0                             -> #stack(14)
-48 - 1 - push 0 ->                             #stack(15)
-51 - 13 - ife not 0                             == 0 -> #ip(72)
+33 - 20 - pushown 2 -> #stack(14)
+36 - 1 - push 144 -> #stack(15)
+39 - 7 - mod 144 % 2
+42 - 2 - pull 0 -> #515
+45 - 20 - pushown 0 -> #stack(14)
+48 - 1 - push 0 -> #stack(15)
+51 - 13 - ife not 0 == 0 -> #ip(72)
 54 - 21 - del #stack(15)
 57 - 21 - del #stack(14)
-60 - 1 - push 144 ->                             #stack(14)
-63 - 1 - push 44 ->                             #stack(15)
-66 - 3 - add 44 +                             144 -> #stack(14)
-69 - 2 - pull 188 ->                             #514
-72 - 1 - push 89 ->                             #stack(14)
-75 - 1 - push 144 ->                             #stack(15)
-78 - 3 - add 144 +                             89 -> #stack(14)
-81 - 2 - pull 233 ->                             #516
-84 - 1 - push 144 ->                             #stack(14)
-87 - 2 - pull 144 ->                             #513
-90 - 1 - push 233 ->                             #stack(14)
-93 - 2 - pull 233 ->                             #512
+60 - 1 - push 144 -> #stack(14)
+63 - 1 - push 44 -> #stack(15)
+66 - 3 - add 44 + 144
+69 - 2 - pull 188 -> #514
+72 - 1 - push 89 -> #stack(14)
+75 - 1 - push 144 -> #stack(15)
+78 - 3 - add 144 + 89
+81 - 2 - pull 233 -> #516
+84 - 1 - push 144 -> #stack(14)
+87 - 2 - pull 144 -> #513
+90 - 1 - push 233 -> #stack(14)
+93 - 2 - pull 233 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(14)
-21 - 1 - push 233 ->                             #stack(15)
-24 - 12 - ifl not 233 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(14)
+21 - 1 - push 233 -> #stack(15)
+24 - 12 - ifl not 233 < 4000000 -> #ip(99)
 27 - 21 - del #stack(15)
 30 - 21 - del #stack(14)
-33 - 20 - pushown 2                             -> #stack(14)
-36 - 1 - push 233 ->                             #stack(15)
-39 - 7 - mod 233 %                             2 -> #stack(14)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(14)
-48 - 1 - push 1 ->                             #stack(15)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 144 ->                             #stack(16)
-75 - 1 - push 233 ->                             #stack(17)
-78 - 3 - add 233 +                             144 -> #stack(16)
-81 - 2 - pull 377 ->                             #516
-84 - 1 - push 233 ->                             #stack(16)
-87 - 2 - pull 233 ->                             #513
-90 - 1 - push 377 ->                             #stack(16)
-93 - 2 - pull 377 ->                             #512
+33 - 20 - pushown 2 -> #stack(14)
+36 - 1 - push 233 -> #stack(15)
+39 - 7 - mod 233 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(14)
+48 - 1 - push 1 -> #stack(15)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 144 -> #stack(16)
+75 - 1 - push 233 -> #stack(17)
+78 - 3 - add 233 + 144
+81 - 2 - pull 377 -> #516
+84 - 1 - push 233 -> #stack(16)
+87 - 2 - pull 233 -> #513
+90 - 1 - push 377 -> #stack(16)
+93 - 2 - pull 377 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(16)
-21 - 1 - push 377 ->                             #stack(17)
-24 - 12 - ifl not 377 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(16)
+21 - 1 - push 377 -> #stack(17)
+24 - 12 - ifl not 377 < 4000000 -> #ip(99)
 27 - 21 - del #stack(17)
 30 - 21 - del #stack(16)
-33 - 20 - pushown 2                             -> #stack(16)
-36 - 1 - push 377 ->                             #stack(17)
-39 - 7 - mod 377 %                             2 -> #stack(16)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(16)
-48 - 1 - push 1 ->                             #stack(17)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 233 ->                             #stack(18)
-75 - 1 - push 377 ->                             #stack(19)
-78 - 3 - add 377 +                             233 -> #stack(18)
-81 - 2 - pull 610 ->                             #516
-84 - 1 - push 377 ->                             #stack(18)
-87 - 2 - pull 377 ->                             #513
-90 - 1 - push 610 ->                             #stack(18)
-93 - 2 - pull 610 ->                             #512
+33 - 20 - pushown 2 -> #stack(16)
+36 - 1 - push 377 -> #stack(17)
+39 - 7 - mod 377 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(16)
+48 - 1 - push 1 -> #stack(17)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 233 -> #stack(18)
+75 - 1 - push 377 -> #stack(19)
+78 - 3 - add 377 + 233
+81 - 2 - pull 610 -> #516
+84 - 1 - push 377 -> #stack(18)
+87 - 2 - pull 377 -> #513
+90 - 1 - push 610 -> #stack(18)
+93 - 2 - pull 610 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(18)
-21 - 1 - push 610 ->                             #stack(19)
-24 - 12 - ifl not 610 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(18)
+21 - 1 - push 610 -> #stack(19)
+24 - 12 - ifl not 610 < 4000000 -> #ip(99)
 27 - 21 - del #stack(19)
 30 - 21 - del #stack(18)
-33 - 20 - pushown 2                             -> #stack(18)
-36 - 1 - push 610 ->                             #stack(19)
-39 - 7 - mod 610 %                             2 -> #stack(18)
-42 - 2 - pull 0 ->                             #515
-45 - 20 - pushown 0                             -> #stack(18)
-48 - 1 - push 0 ->                             #stack(19)
-51 - 13 - ife not 0                             == 0 -> #ip(72)
+33 - 20 - pushown 2 -> #stack(18)
+36 - 1 - push 610 -> #stack(19)
+39 - 7 - mod 610 % 2
+42 - 2 - pull 0 -> #515
+45 - 20 - pushown 0 -> #stack(18)
+48 - 1 - push 0 -> #stack(19)
+51 - 13 - ife not 0 == 0 -> #ip(72)
 54 - 21 - del #stack(19)
 57 - 21 - del #stack(18)
-60 - 1 - push 610 ->                             #stack(18)
-63 - 1 - push 188 ->                             #stack(19)
-66 - 3 - add 188 +                             610 -> #stack(18)
-69 - 2 - pull 798 ->                             #514
-72 - 1 - push 377 ->                             #stack(18)
-75 - 1 - push 610 ->                             #stack(19)
-78 - 3 - add 610 +                             377 -> #stack(18)
-81 - 2 - pull 987 ->                             #516
-84 - 1 - push 610 ->                             #stack(18)
-87 - 2 - pull 610 ->                             #513
-90 - 1 - push 987 ->                             #stack(18)
-93 - 2 - pull 987 ->                             #512
+60 - 1 - push 610 -> #stack(18)
+63 - 1 - push 188 -> #stack(19)
+66 - 3 - add 188 + 610
+69 - 2 - pull 798 -> #514
+72 - 1 - push 377 -> #stack(18)
+75 - 1 - push 610 -> #stack(19)
+78 - 3 - add 610 + 377
+81 - 2 - pull 987 -> #516
+84 - 1 - push 610 -> #stack(18)
+87 - 2 - pull 610 -> #513
+90 - 1 - push 987 -> #stack(18)
+93 - 2 - pull 987 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(18)
-21 - 1 - push 987 ->                             #stack(19)
-24 - 12 - ifl not 987 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(18)
+21 - 1 - push 987 -> #stack(19)
+24 - 12 - ifl not 987 < 4000000 -> #ip(99)
 27 - 21 - del #stack(19)
 30 - 21 - del #stack(18)
-33 - 20 - pushown 2                             -> #stack(18)
-36 - 1 - push 987 ->                             #stack(19)
-39 - 7 - mod 987 %                             2 -> #stack(18)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(18)
-48 - 1 - push 1 ->                             #stack(19)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 610 ->                             #stack(20)
-75 - 1 - push 987 ->                             #stack(21)
-78 - 3 - add 987 +                             610 -> #stack(20)
-81 - 2 - pull 1597 ->                             #516
-84 - 1 - push 987 ->                             #stack(20)
-87 - 2 - pull 987 ->                             #513
-90 - 1 - push 1597 ->                             #stack(20)
-93 - 2 - pull 1597 ->                             #512
+33 - 20 - pushown 2 -> #stack(18)
+36 - 1 - push 987 -> #stack(19)
+39 - 7 - mod 987 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(18)
+48 - 1 - push 1 -> #stack(19)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 610 -> #stack(20)
+75 - 1 - push 987 -> #stack(21)
+78 - 3 - add 987 + 610
+81 - 2 - pull 1597 -> #516
+84 - 1 - push 987 -> #stack(20)
+87 - 2 - pull 987 -> #513
+90 - 1 - push 1597 -> #stack(20)
+93 - 2 - pull 1597 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(20)
-21 - 1 - push 1597 ->                             #stack(21)
-24 - 12 - ifl not 1597 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(20)
+21 - 1 - push 1597 -> #stack(21)
+24 - 12 - ifl not 1597 < 4000000 -> #ip(99)
 27 - 21 - del #stack(21)
 30 - 21 - del #stack(20)
-33 - 20 - pushown 2                             -> #stack(20)
-36 - 1 - push 1597 ->                             #stack(21)
-39 - 7 - mod 1597 %                             2 -> #stack(20)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(20)
-48 - 1 - push 1 ->                             #stack(21)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 987 ->                             #stack(22)
-75 - 1 - push 1597 ->                             #stack(23)
-78 - 3 - add 1597 +                             987 -> #stack(22)
-81 - 2 - pull 2584 ->                             #516
-84 - 1 - push 1597 ->                             #stack(22)
-87 - 2 - pull 1597 ->                             #513
-90 - 1 - push 2584 ->                             #stack(22)
-93 - 2 - pull 2584 ->                             #512
+33 - 20 - pushown 2 -> #stack(20)
+36 - 1 - push 1597 -> #stack(21)
+39 - 7 - mod 1597 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(20)
+48 - 1 - push 1 -> #stack(21)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 987 -> #stack(22)
+75 - 1 - push 1597 -> #stack(23)
+78 - 3 - add 1597 + 987
+81 - 2 - pull 2584 -> #516
+84 - 1 - push 1597 -> #stack(22)
+87 - 2 - pull 1597 -> #513
+90 - 1 - push 2584 -> #stack(22)
+93 - 2 - pull 2584 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(22)
-21 - 1 - push 2584 ->                             #stack(23)
-24 - 12 - ifl not 2584 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(22)
+21 - 1 - push 2584 -> #stack(23)
+24 - 12 - ifl not 2584 < 4000000 -> #ip(99)
 27 - 21 - del #stack(23)
 30 - 21 - del #stack(22)
-33 - 20 - pushown 2                             -> #stack(22)
-36 - 1 - push 2584 ->                             #stack(23)
-39 - 7 - mod 2584 %                             2 -> #stack(22)
-42 - 2 - pull 0 ->                             #515
-45 - 20 - pushown 0                             -> #stack(22)
-48 - 1 - push 0 ->                             #stack(23)
-51 - 13 - ife not 0                             == 0 -> #ip(72)
+33 - 20 - pushown 2 -> #stack(22)
+36 - 1 - push 2584 -> #stack(23)
+39 - 7 - mod 2584 % 2
+42 - 2 - pull 0 -> #515
+45 - 20 - pushown 0 -> #stack(22)
+48 - 1 - push 0 -> #stack(23)
+51 - 13 - ife not 0 == 0 -> #ip(72)
 54 - 21 - del #stack(23)
 57 - 21 - del #stack(22)
-60 - 1 - push 2584 ->                             #stack(22)
-63 - 1 - push 798 ->                             #stack(23)
-66 - 3 - add 798 +                             2584 -> #stack(22)
-69 - 2 - pull 3382 ->                             #514
-72 - 1 - push 1597 ->                             #stack(22)
-75 - 1 - push 2584 ->                             #stack(23)
-78 - 3 - add 2584 +                             1597 -> #stack(22)
-81 - 2 - pull 4181 ->                             #516
-84 - 1 - push 2584 ->                             #stack(22)
-87 - 2 - pull 2584 ->                             #513
-90 - 1 - push 4181 ->                             #stack(22)
-93 - 2 - pull 4181 ->                             #512
+60 - 1 - push 2584 -> #stack(22)
+63 - 1 - push 798 -> #stack(23)
+66 - 3 - add 798 + 2584
+69 - 2 - pull 3382 -> #514
+72 - 1 - push 1597 -> #stack(22)
+75 - 1 - push 2584 -> #stack(23)
+78 - 3 - add 2584 + 1597
+81 - 2 - pull 4181 -> #516
+84 - 1 - push 2584 -> #stack(22)
+87 - 2 - pull 2584 -> #513
+90 - 1 - push 4181 -> #stack(22)
+93 - 2 - pull 4181 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(22)
-21 - 1 - push 4181 ->                             #stack(23)
-24 - 12 - ifl not 4181 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(22)
+21 - 1 - push 4181 -> #stack(23)
+24 - 12 - ifl not 4181 < 4000000 -> #ip(99)
 27 - 21 - del #stack(23)
 30 - 21 - del #stack(22)
-33 - 20 - pushown 2                             -> #stack(22)
-36 - 1 - push 4181 ->                             #stack(23)
-39 - 7 - mod 4181 %                             2 -> #stack(22)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(22)
-48 - 1 - push 1 ->                             #stack(23)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 2584 ->                             #stack(24)
-75 - 1 - push 4181 ->                             #stack(25)
-78 - 3 - add 4181 +                             2584 -> #stack(24)
-81 - 2 - pull 6765 ->                             #516
-84 - 1 - push 4181 ->                             #stack(24)
-87 - 2 - pull 4181 ->                             #513
-90 - 1 - push 6765 ->                             #stack(24)
-93 - 2 - pull 6765 ->                             #512
+33 - 20 - pushown 2 -> #stack(22)
+36 - 1 - push 4181 -> #stack(23)
+39 - 7 - mod 4181 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(22)
+48 - 1 - push 1 -> #stack(23)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 2584 -> #stack(24)
+75 - 1 - push 4181 -> #stack(25)
+78 - 3 - add 4181 + 2584
+81 - 2 - pull 6765 -> #516
+84 - 1 - push 4181 -> #stack(24)
+87 - 2 - pull 4181 -> #513
+90 - 1 - push 6765 -> #stack(24)
+93 - 2 - pull 6765 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(24)
-21 - 1 - push 6765 ->                             #stack(25)
-24 - 12 - ifl not 6765 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(24)
+21 - 1 - push 6765 -> #stack(25)
+24 - 12 - ifl not 6765 < 4000000 -> #ip(99)
 27 - 21 - del #stack(25)
 30 - 21 - del #stack(24)
-33 - 20 - pushown 2                             -> #stack(24)
-36 - 1 - push 6765 ->                             #stack(25)
-39 - 7 - mod 6765 %                             2 -> #stack(24)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(24)
-48 - 1 - push 1 ->                             #stack(25)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 4181 ->                             #stack(26)
-75 - 1 - push 6765 ->                             #stack(27)
-78 - 3 - add 6765 +                             4181 -> #stack(26)
-81 - 2 - pull 10946 ->                             #516
-84 - 1 - push 6765 ->                             #stack(26)
-87 - 2 - pull 6765 ->                             #513
-90 - 1 - push 10946 ->                             #stack(26)
-93 - 2 - pull 10946 ->                             #512
+33 - 20 - pushown 2 -> #stack(24)
+36 - 1 - push 6765 -> #stack(25)
+39 - 7 - mod 6765 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(24)
+48 - 1 - push 1 -> #stack(25)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 4181 -> #stack(26)
+75 - 1 - push 6765 -> #stack(27)
+78 - 3 - add 6765 + 4181
+81 - 2 - pull 10946 -> #516
+84 - 1 - push 6765 -> #stack(26)
+87 - 2 - pull 6765 -> #513
+90 - 1 - push 10946 -> #stack(26)
+93 - 2 - pull 10946 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(26)
-21 - 1 - push 10946 ->                             #stack(27)
-24 - 12 - ifl not 10946 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(26)
+21 - 1 - push 10946 -> #stack(27)
+24 - 12 - ifl not 10946 < 4000000 -> #ip(99)
 27 - 21 - del #stack(27)
 30 - 21 - del #stack(26)
-33 - 20 - pushown 2                             -> #stack(26)
-36 - 1 - push 10946 ->                             #stack(27)
-39 - 7 - mod 10946 %                             2 -> #stack(26)
-42 - 2 - pull 0 ->                             #515
-45 - 20 - pushown 0                             -> #stack(26)
-48 - 1 - push 0 ->                             #stack(27)
-51 - 13 - ife not 0                             == 0 -> #ip(72)
+33 - 20 - pushown 2 -> #stack(26)
+36 - 1 - push 10946 -> #stack(27)
+39 - 7 - mod 10946 % 2
+42 - 2 - pull 0 -> #515
+45 - 20 - pushown 0 -> #stack(26)
+48 - 1 - push 0 -> #stack(27)
+51 - 13 - ife not 0 == 0 -> #ip(72)
 54 - 21 - del #stack(27)
 57 - 21 - del #stack(26)
-60 - 1 - push 10946 ->                             #stack(26)
-63 - 1 - push 3382 ->                             #stack(27)
-66 - 3 - add 3382 +                             10946 -> #stack(26)
-69 - 2 - pull 14328 ->                             #514
-72 - 1 - push 6765 ->                             #stack(26)
-75 - 1 - push 10946 ->                             #stack(27)
-78 - 3 - add 10946 +                             6765 -> #stack(26)
-81 - 2 - pull 17711 ->                             #516
-84 - 1 - push 10946 ->                             #stack(26)
-87 - 2 - pull 10946 ->                             #513
-90 - 1 - push 17711 ->                             #stack(26)
-93 - 2 - pull 17711 ->                             #512
+60 - 1 - push 10946 -> #stack(26)
+63 - 1 - push 3382 -> #stack(27)
+66 - 3 - add 3382 + 10946
+69 - 2 - pull 14328 -> #514
+72 - 1 - push 6765 -> #stack(26)
+75 - 1 - push 10946 -> #stack(27)
+78 - 3 - add 10946 + 6765
+81 - 2 - pull 17711 -> #516
+84 - 1 - push 10946 -> #stack(26)
+87 - 2 - pull 10946 -> #513
+90 - 1 - push 17711 -> #stack(26)
+93 - 2 - pull 17711 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(26)
-21 - 1 - push 17711 ->                             #stack(27)
-24 - 12 - ifl not 17711 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(26)
+21 - 1 - push 17711 -> #stack(27)
+24 - 12 - ifl not 17711 < 4000000 -> #ip(99)
 27 - 21 - del #stack(27)
 30 - 21 - del #stack(26)
-33 - 20 - pushown 2                             -> #stack(26)
-36 - 1 - push 17711 ->                             #stack(27)
-39 - 7 - mod 17711 %                             2 -> #stack(26)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(26)
-48 - 1 - push 1 ->                             #stack(27)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 10946 ->                             #stack(28)
-75 - 1 - push 17711 ->                             #stack(29)
-78 - 3 - add 17711 +                             10946 -> #stack(28)
-81 - 2 - pull 28657 ->                             #516
-84 - 1 - push 17711 ->                             #stack(28)
-87 - 2 - pull 17711 ->                             #513
-90 - 1 - push 28657 ->                             #stack(28)
-93 - 2 - pull 28657 ->                             #512
+33 - 20 - pushown 2 -> #stack(26)
+36 - 1 - push 17711 -> #stack(27)
+39 - 7 - mod 17711 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(26)
+48 - 1 - push 1 -> #stack(27)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 10946 -> #stack(28)
+75 - 1 - push 17711 -> #stack(29)
+78 - 3 - add 17711 + 10946
+81 - 2 - pull 28657 -> #516
+84 - 1 - push 17711 -> #stack(28)
+87 - 2 - pull 17711 -> #513
+90 - 1 - push 28657 -> #stack(28)
+93 - 2 - pull 28657 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(28)
-21 - 1 - push 28657 ->                             #stack(29)
-24 - 12 - ifl not 28657 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(28)
+21 - 1 - push 28657 -> #stack(29)
+24 - 12 - ifl not 28657 < 4000000 -> #ip(99)
 27 - 21 - del #stack(29)
 30 - 21 - del #stack(28)
-33 - 20 - pushown 2                             -> #stack(28)
-36 - 1 - push 28657 ->                             #stack(29)
-39 - 7 - mod 28657 %                             2 -> #stack(28)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(28)
-48 - 1 - push 1 ->                             #stack(29)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 17711 ->                             #stack(30)
-75 - 1 - push 28657 ->                             #stack(31)
-78 - 3 - add 28657 +                             17711 -> #stack(30)
-81 - 2 - pull 46368 ->                             #516
-84 - 1 - push 28657 ->                             #stack(30)
-87 - 2 - pull 28657 ->                             #513
-90 - 1 - push 46368 ->                             #stack(30)
-93 - 2 - pull 46368 ->                             #512
+33 - 20 - pushown 2 -> #stack(28)
+36 - 1 - push 28657 -> #stack(29)
+39 - 7 - mod 28657 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(28)
+48 - 1 - push 1 -> #stack(29)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 17711 -> #stack(30)
+75 - 1 - push 28657 -> #stack(31)
+78 - 3 - add 28657 + 17711
+81 - 2 - pull 46368 -> #516
+84 - 1 - push 28657 -> #stack(30)
+87 - 2 - pull 28657 -> #513
+90 - 1 - push 46368 -> #stack(30)
+93 - 2 - pull 46368 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(30)
-21 - 1 - push 46368 ->                             #stack(31)
-24 - 12 - ifl not 46368 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(30)
+21 - 1 - push 46368 -> #stack(31)
+24 - 12 - ifl not 46368 < 4000000 -> #ip(99)
 27 - 21 - del #stack(31)
 30 - 21 - del #stack(30)
-33 - 20 - pushown 2                             -> #stack(30)
-36 - 1 - push 46368 ->                             #stack(31)
-39 - 7 - mod 46368 %                             2 -> #stack(30)
-42 - 2 - pull 0 ->                             #515
-45 - 20 - pushown 0                             -> #stack(30)
-48 - 1 - push 0 ->                             #stack(31)
-51 - 13 - ife not 0                             == 0 -> #ip(72)
+33 - 20 - pushown 2 -> #stack(30)
+36 - 1 - push 46368 -> #stack(31)
+39 - 7 - mod 46368 % 2
+42 - 2 - pull 0 -> #515
+45 - 20 - pushown 0 -> #stack(30)
+48 - 1 - push 0 -> #stack(31)
+51 - 13 - ife not 0 == 0 -> #ip(72)
 54 - 21 - del #stack(31)
 57 - 21 - del #stack(30)
-60 - 1 - push 46368 ->                             #stack(30)
-63 - 1 - push 14328 ->                             #stack(31)
-66 - 3 - add 14328 +                             46368 -> #stack(30)
-69 - 2 - pull 60696 ->                             #514
-72 - 1 - push 28657 ->                             #stack(30)
-75 - 1 - push 46368 ->                             #stack(31)
-78 - 3 - add 46368 +                             28657 -> #stack(30)
-81 - 2 - pull 75025 ->                             #516
-84 - 1 - push 46368 ->                             #stack(30)
-87 - 2 - pull 46368 ->                             #513
-90 - 1 - push 75025 ->                             #stack(30)
-93 - 2 - pull 75025 ->                             #512
+60 - 1 - push 46368 -> #stack(30)
+63 - 1 - push 14328 -> #stack(31)
+66 - 3 - add 14328 + 46368
+69 - 2 - pull 60696 -> #514
+72 - 1 - push 28657 -> #stack(30)
+75 - 1 - push 46368 -> #stack(31)
+78 - 3 - add 46368 + 28657
+81 - 2 - pull 75025 -> #516
+84 - 1 - push 46368 -> #stack(30)
+87 - 2 - pull 46368 -> #513
+90 - 1 - push 75025 -> #stack(30)
+93 - 2 - pull 75025 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(30)
-21 - 1 - push 75025 ->                             #stack(31)
-24 - 12 - ifl not 75025 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(30)
+21 - 1 - push 75025 -> #stack(31)
+24 - 12 - ifl not 75025 < 4000000 -> #ip(99)
 27 - 21 - del #stack(31)
 30 - 21 - del #stack(30)
-33 - 20 - pushown 2                             -> #stack(30)
-36 - 1 - push 75025 ->                             #stack(31)
-39 - 7 - mod 75025 %                             2 -> #stack(30)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(30)
-48 - 1 - push 1 ->                             #stack(31)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 46368 ->                             #stack(32)
-75 - 1 - push 75025 ->                             #stack(33)
-78 - 3 - add 75025 +                             46368 -> #stack(32)
-81 - 2 - pull 121393 ->                             #516
-84 - 1 - push 75025 ->                             #stack(32)
-87 - 2 - pull 75025 ->                             #513
-90 - 1 - push 121393 ->                             #stack(32)
-93 - 2 - pull 121393 ->                             #512
+33 - 20 - pushown 2 -> #stack(30)
+36 - 1 - push 75025 -> #stack(31)
+39 - 7 - mod 75025 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(30)
+48 - 1 - push 1 -> #stack(31)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 46368 -> #stack(32)
+75 - 1 - push 75025 -> #stack(33)
+78 - 3 - add 75025 + 46368
+81 - 2 - pull 121393 -> #516
+84 - 1 - push 75025 -> #stack(32)
+87 - 2 - pull 75025 -> #513
+90 - 1 - push 121393 -> #stack(32)
+93 - 2 - pull 121393 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(32)
-21 - 1 - push 121393 ->                             #stack(33)
-24 - 12 - ifl not 121393 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(32)
+21 - 1 - push 121393 -> #stack(33)
+24 - 12 - ifl not 121393 < 4000000 -> #ip(99)
 27 - 21 - del #stack(33)
 30 - 21 - del #stack(32)
-33 - 20 - pushown 2                             -> #stack(32)
-36 - 1 - push 121393 ->                             #stack(33)
-39 - 7 - mod 121393 %                             2 -> #stack(32)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(32)
-48 - 1 - push 1 ->                             #stack(33)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 75025 ->                             #stack(34)
-75 - 1 - push 121393 ->                             #stack(35)
-78 - 3 - add 121393 +                             75025 -> #stack(34)
-81 - 2 - pull 196418 ->                             #516
-84 - 1 - push 121393 ->                             #stack(34)
-87 - 2 - pull 121393 ->                             #513
-90 - 1 - push 196418 ->                             #stack(34)
-93 - 2 - pull 196418 ->                             #512
+33 - 20 - pushown 2 -> #stack(32)
+36 - 1 - push 121393 -> #stack(33)
+39 - 7 - mod 121393 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(32)
+48 - 1 - push 1 -> #stack(33)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 75025 -> #stack(34)
+75 - 1 - push 121393 -> #stack(35)
+78 - 3 - add 121393 + 75025
+81 - 2 - pull 196418 -> #516
+84 - 1 - push 121393 -> #stack(34)
+87 - 2 - pull 121393 -> #513
+90 - 1 - push 196418 -> #stack(34)
+93 - 2 - pull 196418 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(34)
-21 - 1 - push 196418 ->                             #stack(35)
-24 - 12 - ifl not 196418 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(34)
+21 - 1 - push 196418 -> #stack(35)
+24 - 12 - ifl not 196418 < 4000000 -> #ip(99)
 27 - 21 - del #stack(35)
 30 - 21 - del #stack(34)
-33 - 20 - pushown 2                             -> #stack(34)
-36 - 1 - push 196418 ->                             #stack(35)
-39 - 7 - mod 196418 %                             2 -> #stack(34)
-42 - 2 - pull 0 ->                             #515
-45 - 20 - pushown 0                             -> #stack(34)
-48 - 1 - push 0 ->                             #stack(35)
-51 - 13 - ife not 0                             == 0 -> #ip(72)
+33 - 20 - pushown 2 -> #stack(34)
+36 - 1 - push 196418 -> #stack(35)
+39 - 7 - mod 196418 % 2
+42 - 2 - pull 0 -> #515
+45 - 20 - pushown 0 -> #stack(34)
+48 - 1 - push 0 -> #stack(35)
+51 - 13 - ife not 0 == 0 -> #ip(72)
 54 - 21 - del #stack(35)
 57 - 21 - del #stack(34)
-60 - 1 - push 196418 ->                             #stack(34)
-63 - 1 - push 60696 ->                             #stack(35)
-66 - 3 - add 60696 +                             196418 -> #stack(34)
-69 - 2 - pull 257114 ->                             #514
-72 - 1 - push 121393 ->                             #stack(34)
-75 - 1 - push 196418 ->                             #stack(35)
-78 - 3 - add 196418 +                             121393 -> #stack(34)
-81 - 2 - pull 317811 ->                             #516
-84 - 1 - push 196418 ->                             #stack(34)
-87 - 2 - pull 196418 ->                             #513
-90 - 1 - push 317811 ->                             #stack(34)
-93 - 2 - pull 317811 ->                             #512
+60 - 1 - push 196418 -> #stack(34)
+63 - 1 - push 60696 -> #stack(35)
+66 - 3 - add 60696 + 196418
+69 - 2 - pull 257114 -> #514
+72 - 1 - push 121393 -> #stack(34)
+75 - 1 - push 196418 -> #stack(35)
+78 - 3 - add 196418 + 121393
+81 - 2 - pull 317811 -> #516
+84 - 1 - push 196418 -> #stack(34)
+87 - 2 - pull 196418 -> #513
+90 - 1 - push 317811 -> #stack(34)
+93 - 2 - pull 317811 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(34)
-21 - 1 - push 317811 ->                             #stack(35)
-24 - 12 - ifl not 317811 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(34)
+21 - 1 - push 317811 -> #stack(35)
+24 - 12 - ifl not 317811 < 4000000 -> #ip(99)
 27 - 21 - del #stack(35)
 30 - 21 - del #stack(34)
-33 - 20 - pushown 2                             -> #stack(34)
-36 - 1 - push 317811 ->                             #stack(35)
-39 - 7 - mod 317811 %                             2 -> #stack(34)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(34)
-48 - 1 - push 1 ->                             #stack(35)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 196418 ->                             #stack(36)
-75 - 1 - push 317811 ->                             #stack(37)
-78 - 3 - add 317811 +                             196418 -> #stack(36)
-81 - 2 - pull 514229 ->                             #516
-84 - 1 - push 317811 ->                             #stack(36)
-87 - 2 - pull 317811 ->                             #513
-90 - 1 - push 514229 ->                             #stack(36)
-93 - 2 - pull 514229 ->                             #512
+33 - 20 - pushown 2 -> #stack(34)
+36 - 1 - push 317811 -> #stack(35)
+39 - 7 - mod 317811 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(34)
+48 - 1 - push 1 -> #stack(35)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 196418 -> #stack(36)
+75 - 1 - push 317811 -> #stack(37)
+78 - 3 - add 317811 + 196418
+81 - 2 - pull 514229 -> #516
+84 - 1 - push 317811 -> #stack(36)
+87 - 2 - pull 317811 -> #513
+90 - 1 - push 514229 -> #stack(36)
+93 - 2 - pull 514229 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(36)
-21 - 1 - push 514229 ->                             #stack(37)
-24 - 12 - ifl not 514229 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(36)
+21 - 1 - push 514229 -> #stack(37)
+24 - 12 - ifl not 514229 < 4000000 -> #ip(99)
 27 - 21 - del #stack(37)
 30 - 21 - del #stack(36)
-33 - 20 - pushown 2                             -> #stack(36)
-36 - 1 - push 514229 ->                             #stack(37)
-39 - 7 - mod 514229 %                             2 -> #stack(36)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(36)
-48 - 1 - push 1 ->                             #stack(37)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 317811 ->                             #stack(38)
-75 - 1 - push 514229 ->                             #stack(39)
-78 - 3 - add 514229 +                             317811 -> #stack(38)
-81 - 2 - pull 832040 ->                             #516
-84 - 1 - push 514229 ->                             #stack(38)
-87 - 2 - pull 514229 ->                             #513
-90 - 1 - push 832040 ->                             #stack(38)
-93 - 2 - pull 832040 ->                             #512
+33 - 20 - pushown 2 -> #stack(36)
+36 - 1 - push 514229 -> #stack(37)
+39 - 7 - mod 514229 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(36)
+48 - 1 - push 1 -> #stack(37)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 317811 -> #stack(38)
+75 - 1 - push 514229 -> #stack(39)
+78 - 3 - add 514229 + 317811
+81 - 2 - pull 832040 -> #516
+84 - 1 - push 514229 -> #stack(38)
+87 - 2 - pull 514229 -> #513
+90 - 1 - push 832040 -> #stack(38)
+93 - 2 - pull 832040 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(38)
-21 - 1 - push 832040 ->                             #stack(39)
-24 - 12 - ifl not 832040 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(38)
+21 - 1 - push 832040 -> #stack(39)
+24 - 12 - ifl not 832040 < 4000000 -> #ip(99)
 27 - 21 - del #stack(39)
 30 - 21 - del #stack(38)
-33 - 20 - pushown 2                             -> #stack(38)
-36 - 1 - push 832040 ->                             #stack(39)
-39 - 7 - mod 832040 %                             2 -> #stack(38)
-42 - 2 - pull 0 ->                             #515
-45 - 20 - pushown 0                             -> #stack(38)
-48 - 1 - push 0 ->                             #stack(39)
-51 - 13 - ife not 0                             == 0 -> #ip(72)
+33 - 20 - pushown 2 -> #stack(38)
+36 - 1 - push 832040 -> #stack(39)
+39 - 7 - mod 832040 % 2
+42 - 2 - pull 0 -> #515
+45 - 20 - pushown 0 -> #stack(38)
+48 - 1 - push 0 -> #stack(39)
+51 - 13 - ife not 0 == 0 -> #ip(72)
 54 - 21 - del #stack(39)
 57 - 21 - del #stack(38)
-60 - 1 - push 832040 ->                             #stack(38)
-63 - 1 - push 257114 ->                             #stack(39)
-66 - 3 - add 257114 +                             832040 -> #stack(38)
-69 - 2 - pull 1089154 ->                             #514
-72 - 1 - push 514229 ->                             #stack(38)
-75 - 1 - push 832040 ->                             #stack(39)
-78 - 3 - add 832040 +                             514229 -> #stack(38)
-81 - 2 - pull 1346269 ->                             #516
-84 - 1 - push 832040 ->                             #stack(38)
-87 - 2 - pull 832040 ->                             #513
-90 - 1 - push 1346269 ->                             #stack(38)
-93 - 2 - pull 1346269 ->                             #512
+60 - 1 - push 832040 -> #stack(38)
+63 - 1 - push 257114 -> #stack(39)
+66 - 3 - add 257114 + 832040
+69 - 2 - pull 1089154 -> #514
+72 - 1 - push 514229 -> #stack(38)
+75 - 1 - push 832040 -> #stack(39)
+78 - 3 - add 832040 + 514229
+81 - 2 - pull 1346269 -> #516
+84 - 1 - push 832040 -> #stack(38)
+87 - 2 - pull 832040 -> #513
+90 - 1 - push 1346269 -> #stack(38)
+93 - 2 - pull 1346269 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(38)
-21 - 1 - push 1346269 ->                             #stack(39)
-24 - 12 - ifl not 1346269 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(38)
+21 - 1 - push 1346269 -> #stack(39)
+24 - 12 - ifl not 1346269 < 4000000 -> #ip(99)
 27 - 21 - del #stack(39)
 30 - 21 - del #stack(38)
-33 - 20 - pushown 2                             -> #stack(38)
-36 - 1 - push 1346269 ->                             #stack(39)
-39 - 7 - mod 1346269 %                             2 -> #stack(38)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(38)
-48 - 1 - push 1 ->                             #stack(39)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 832040 ->                             #stack(40)
-75 - 1 - push 1346269 ->                             #stack(41)
-78 - 3 - add 1346269 +                             832040 -> #stack(40)
-81 - 2 - pull 2178309 ->                             #516
-84 - 1 - push 1346269 ->                             #stack(40)
-87 - 2 - pull 1346269 ->                             #513
-90 - 1 - push 2178309 ->                             #stack(40)
-93 - 2 - pull 2178309 ->                             #512
+33 - 20 - pushown 2 -> #stack(38)
+36 - 1 - push 1346269 -> #stack(39)
+39 - 7 - mod 1346269 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(38)
+48 - 1 - push 1 -> #stack(39)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 832040 -> #stack(40)
+75 - 1 - push 1346269 -> #stack(41)
+78 - 3 - add 1346269 + 832040
+81 - 2 - pull 2178309 -> #516
+84 - 1 - push 1346269 -> #stack(40)
+87 - 2 - pull 1346269 -> #513
+90 - 1 - push 2178309 -> #stack(40)
+93 - 2 - pull 2178309 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(40)
-21 - 1 - push 2178309 ->                             #stack(41)
-24 - 12 - ifl not 2178309 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(40)
+21 - 1 - push 2178309 -> #stack(41)
+24 - 12 - ifl not 2178309 < 4000000 -> #ip(99)
 27 - 21 - del #stack(41)
 30 - 21 - del #stack(40)
-33 - 20 - pushown 2                             -> #stack(40)
-36 - 1 - push 2178309 ->                             #stack(41)
-39 - 7 - mod 2178309 %                             2 -> #stack(40)
-42 - 2 - pull 1 ->                             #515
-45 - 20 - pushown 0                             -> #stack(40)
-48 - 1 - push 1 ->                             #stack(41)
-51 - 13 - ife not 1                             == 0 -> #ip(72)
-72 - 1 - push 1346269 ->                             #stack(42)
-75 - 1 - push 2178309 ->                             #stack(43)
-78 - 3 - add 2178309 +                             1346269 -> #stack(42)
-81 - 2 - pull 3524578 ->                             #516
-84 - 1 - push 2178309 ->                             #stack(42)
-87 - 2 - pull 2178309 ->                             #513
-90 - 1 - push 3524578 ->                             #stack(42)
-93 - 2 - pull 3524578 ->                             #512
+33 - 20 - pushown 2 -> #stack(40)
+36 - 1 - push 2178309 -> #stack(41)
+39 - 7 - mod 2178309 % 2
+42 - 2 - pull 1 -> #515
+45 - 20 - pushown 0 -> #stack(40)
+48 - 1 - push 1 -> #stack(41)
+51 - 13 - ife not 1 == 0 -> #ip(72)
+72 - 1 - push 1346269 -> #stack(42)
+75 - 1 - push 2178309 -> #stack(43)
+78 - 3 - add 2178309 + 1346269
+81 - 2 - pull 3524578 -> #516
+84 - 1 - push 2178309 -> #stack(42)
+87 - 2 - pull 2178309 -> #513
+90 - 1 - push 3524578 -> #stack(42)
+93 - 2 - pull 3524578 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(42)
-21 - 1 - push 3524578 ->                             #stack(43)
-24 - 12 - ifl not 3524578 <                             4000000 -> #ip(99)
+18 - 20 - pushown 4000000 -> #stack(42)
+21 - 1 - push 3524578 -> #stack(43)
+24 - 12 - ifl not 3524578 < 4000000 -> #ip(99)
 27 - 21 - del #stack(43)
 30 - 21 - del #stack(42)
-33 - 20 - pushown 2                             -> #stack(42)
-36 - 1 - push 3524578 ->                             #stack(43)
-39 - 7 - mod 3524578 %                             2 -> #stack(42)
-42 - 2 - pull 0 ->                             #515
-45 - 20 - pushown 0                             -> #stack(42)
-48 - 1 - push 0 ->                             #stack(43)
-51 - 13 - ife not 0                             == 0 -> #ip(72)
+33 - 20 - pushown 2 -> #stack(42)
+36 - 1 - push 3524578 -> #stack(43)
+39 - 7 - mod 3524578 % 2
+42 - 2 - pull 0 -> #515
+45 - 20 - pushown 0 -> #stack(42)
+48 - 1 - push 0 -> #stack(43)
+51 - 13 - ife not 0 == 0 -> #ip(72)
 54 - 21 - del #stack(43)
 57 - 21 - del #stack(42)
-60 - 1 - push 3524578 ->                             #stack(42)
-63 - 1 - push 1089154 ->                             #stack(43)
-66 - 3 - add 1089154 +                             3524578 -> #stack(42)
-69 - 2 - pull 4613732 ->                             #514
-72 - 1 - push 2178309 ->                             #stack(42)
-75 - 1 - push 3524578 ->                             #stack(43)
-78 - 3 - add 3524578 +                             2178309 -> #stack(42)
-81 - 2 - pull 5702887 ->                             #516
-84 - 1 - push 3524578 ->                             #stack(42)
-87 - 2 - pull 3524578 ->                             #513
-90 - 1 - push 5702887 ->                             #stack(42)
-93 - 2 - pull 5702887 ->                             #512
+60 - 1 - push 3524578 -> #stack(42)
+63 - 1 - push 1089154 -> #stack(43)
+66 - 3 - add 1089154 + 3524578
+69 - 2 - pull 4613732 -> #514
+72 - 1 - push 2178309 -> #stack(42)
+75 - 1 - push 3524578 -> #stack(43)
+78 - 3 - add 3524578 + 2178309
+81 - 2 - pull 5702887 -> #516
+84 - 1 - push 3524578 -> #stack(42)
+87 - 2 - pull 3524578 -> #513
+90 - 1 - push 5702887 -> #stack(42)
+93 - 2 - pull 5702887 -> #512
 96 - 10 - jmp 18 -> IP
-18 - 20 - pushown 4000000                             -> #stack(42)
-21 - 1 - push 5702887 ->                             #stack(43)
-24 - 12 - ifl not 5702887 <                             4000000 -> #ip(99)
-99 - 1 - push 4613732 ->                             #stack(44)
-102 - 33 - outint 4613732                             -> #stack(45)
+18 - 20 - pushown 4000000 -> #stack(42)
+21 - 1 - push 5702887 -> #stack(43)
+24 - 12 - ifl not 5702887 < 4000000 -> #ip(99)
+99 - 1 - push 4613732 -> #stack(44)
+102 - 33 - outint 4613732
 105 - 0 - hlt
 ```
 
