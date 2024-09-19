@@ -12,32 +12,27 @@ class DataPath:
         match instruction:
             case 3:  # Складывает два верхних значения в стеке
                 self.log.write(
-                    f"{instr_pointer} - {instruction} - add {stack_top} + \
-                            {stack_next}\n")
+                    f"{instr_pointer} - {instruction} - add {stack_top} + {stack_next}\n")
                 return stack_next + stack_top
 
             case 4:  # Вычитает из верхнего значения стека следующее значение стека
                 self.log.write(
-                    f"{instr_pointer} - {instruction} - sub {stack_top} - \
-                            {stack_next}\n")
+                    f"{instr_pointer} - {instruction} - sub {stack_top} - {stack_next}\n")
                 return stack_top - stack_next
 
             case 5:  # Умножает верхнее значение стека и следующее значение стека
                 self.log.write(
-                    f"{instr_pointer} - {instruction} - mult {stack_top} * \
-                            {stack_next}\n")
+                    f"{instr_pointer} - {instruction} - mult {stack_top} * {stack_next}\n")
                 return stack_top * stack_next
 
             case 6:  # Производит целочисленное деление верхнего значения стека на следующее значение стека
                 self.log.write(
-                    f"{instr_pointer} - {instruction} - div {stack_top} // \
-                            {stack_next}\n")
+                    f"{instr_pointer} - {instruction} - div {stack_top} // {stack_next}\n")
                 return stack_top // stack_next
 
             case 7:  # Находит остаток от деления значения на вершине стека и следующего значения стека
                 self.log.write(
-                    f"{instr_pointer} - {instruction} - mod {stack_top} % \
-                            {stack_next}\n")
+                    f"{instr_pointer} - {instruction} - mod {stack_top} % {stack_next}\n")
                 return stack_top % stack_next
 
     def input_mux(self, is_numeric, instr_pointer):
