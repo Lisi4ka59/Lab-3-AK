@@ -177,10 +177,10 @@
 ## Модель процессора
 
 ### Datapath
-![image](https://github.com/user-attachments/assets/4c373ad4-9f44-454a-9786-9eb503bed9a8)
+![image](https://github.com/user-attachments/assets/c80cd330-7154-4733-abaf-ae2004685b8f)
 
 ### Control Unit
-![image](https://github.com/user-attachments/assets/7c8a2f67-00a6-43c1-930b-7525715ef9a4)
+![image](https://github.com/user-attachments/assets/caca6b54-ce60-49cd-8c8b-2da6d1478852)
 
 
 ## Тестирование
