@@ -63,6 +63,13 @@ def branch_unit(instruction, logger):
                 return memory[instr_pointer + 1]
             return None
 
+        case 17:  # Переход, если вершина стека лежит в диапазоне
+            logger.write(
+                f"{instr_pointer} - {memory[instr_pointer]} - ifin {memory[stack_pointer - 1]} in [{memory[instr_pointer + 1]}; {memory[instr_pointer + 2]}] -> #ip({memory[stack_pointer - 2]})\n")
+            if memory[stack_pointer - 1] in range(memory[instr_pointer + 1], memory[instr_pointer + 2]):
+                return memory[stack_pointer - 2]
+            return None
+
 
 with open("log.txt", "w") as log:
     with open("input.txt", "r") as inp:
@@ -94,7 +101,7 @@ with open("log.txt", "w") as log:
                         memory[stack_pointer - 1] = prom
                         memory[stack_pointer] = 0
 
-                    case 10 | 11 | 12 | 13 | 14 | 15 | 16:  # Команды выполняющиеся в Branch unit
+                    case 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17:  # Команды выполняющиеся в Branch unit
                         new_instr_pointer = branch_unit(memory[instr_pointer], log)
                         if new_instr_pointer is not None:
                             instr_pointer = new_instr_pointer
